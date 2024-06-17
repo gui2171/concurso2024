@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ff116996c0eda3e238fcb53e5a00749f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="text-align: center; font-family: Arial, sans-serif;">
+        <h1>Concursos Para Professor</h1>
+        <h3 style="color: gray;">Gerado em : 17/06/2024</h3>
+    </div>
+    
+    
+    <div id="notFoundButton" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+        <button onclick="document.getElementById('notFoundList').style.display = 
+        document.getElementById('notFoundList').style.display === 'none' ? 'block' : 'none';">
+            Show/Hide Not Found List
+        </button>
+    </div>
+    <div id="notFoundList" style="display: none; background-color: white; border: 1px solid black; padding: 10px; max-width: 300px; max-height: 300px; overflow-y: auto; position: fixed; top: 50px; right: 10px; z-index: 1000;">
+        <h4>Coordinates not found:</h4><ul></ul>
+    </div>
+    
+    
+            <div class="folium-map" id="map_ff116996c0eda3e238fcb53e5a00749f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ff116996c0eda3e238fcb53e5a00749f = L.map(
+                "map_ff116996c0eda3e238fcb53e5a00749f",
+                {
+                    center: [-30.0, -53.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32b1a97bbe89726dcfe8a2cd2baed2a1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_32b1a97bbe89726dcfe8a2cd2baed2a1.addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+            var marker_dca800a3a663a1092eea302610658f9d = L.marker(
+                [-27.852577, -53.777605],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_8521469279fdb1d68f7502b1d6c830cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fe7318b4c439f3b91f84c0935747f2d = $(`<div id="html_3fe7318b4c439f3b91f84c0935747f2d" style="width: 100.0%; height: 100.0%;">             <b>IF Farroupilha - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IF Farroupilha - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 7 vagas até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 18/06/2024             </div>`)[0];
+                popup_8521469279fdb1d68f7502b1d6c830cb.setContent(html_3fe7318b4c439f3b91f84c0935747f2d);
+            
+        
+
+        marker_dca800a3a663a1092eea302610658f9d.bindPopup(popup_8521469279fdb1d68f7502b1d6c830cb)
+        ;
+
+        
+    
+    
+            var marker_3ac9b3cdc142ac8ea49da20d8b393540 = L.marker(
+                [-29.22647, -51.3468188],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_194822fda8d69757c504db4997e931a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cee4dd1230dd1b9e1e4aa10df4453d0d = $(`<div id="html_cee4dd1230dd1b9e1e4aa10df4453d0d" style="width: 100.0%; height: 100.0%;">             <b>IFRS - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFRS - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 27/06/2024             </div>`)[0];
+                popup_194822fda8d69757c504db4997e931a7.setContent(html_cee4dd1230dd1b9e1e4aa10df4453d0d);
+            
+        
+
+        marker_3ac9b3cdc142ac8ea49da20d8b393540.bindPopup(popup_194822fda8d69757c504db4997e931a7)
+        ;
+
+        
+    
+    
+            var marker_d73aa6b01a912cb0cc3cc50ab1b0abbe = L.marker(
+                [-30.03306, -51.23],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_3fa7e2a68ab6767de1dced94a13a3ea7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f589bdfc278e0393ae1a7b4a2dd7d09 = $(`<div id="html_8f589bdfc278e0393ae1a7b4a2dd7d09" style="width: 100.0%; height: 100.0%;">             <b>IFRS - Instituto Federal de Educação, Ciência e Tecnologia - Porto Alegre</b><br>             Instituição: IFRS - Instituto Federal de Educação, Ciência e Tecnologia - Porto Alegre<br>             Vagas: 1 vaga até R$ 3839,21Professor SubstitutoSuperior<br>             Prazo inscrição: 25/06/2024             </div>`)[0];
+                popup_3fa7e2a68ab6767de1dced94a13a3ea7.setContent(html_8f589bdfc278e0393ae1a7b4a2dd7d09);
+            
+        
+
+        marker_d73aa6b01a912cb0cc3cc50ab1b0abbe.bindPopup(popup_3fa7e2a68ab6767de1dced94a13a3ea7)
+        ;
+
+        
+    
+    
+            var marker_5a71e39d12b524f10594d54506cdce1e = L.marker(
+                [-29.16343595, -51.635216436452914],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_26f0ebf7b67e4cc6b6c84515c5131445 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d4f1688ac7b2f677165f173a55a1594d = $(`<div id="html_d4f1688ac7b2f677165f173a55a1594d" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Bento Gonçalves</b><br>             Instituição: Prefeitura de Bento Gonçalves<br>             Vagas: 33 vagas até R$ 5226,12Vários CargosFundamental Incompleto / Médio / Técnico / Superior<br>             Prazo inscrição: 03/07/2024             </div>`)[0];
+                popup_26f0ebf7b67e4cc6b6c84515c5131445.setContent(html_d4f1688ac7b2f677165f173a55a1594d);
+            
+        
+
+        marker_5a71e39d12b524f10594d54506cdce1e.bindPopup(popup_26f0ebf7b67e4cc6b6c84515c5131445)
+        ;
+
+        
+    
+    
+            var marker_92a3111568f7ad1f5d8099a341832ed0 = L.marker(
+                [-27.497873050000003, -54.102543750090675],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_e73cb51acba4068cc8e9149852bcb743 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b395b2d5001fe9942428f5da409b812 = $(`<div id="html_2b395b2d5001fe9942428f5da409b812" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Crissiumal</b><br>             Instituição: Prefeitura de Crissiumal<br>             Vagas: 26 vagas até R$ 5236,54Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 16/07/2024             </div>`)[0];
+                popup_e73cb51acba4068cc8e9149852bcb743.setContent(html_2b395b2d5001fe9942428f5da409b812);
+            
+        
+
+        marker_92a3111568f7ad1f5d8099a341832ed0.bindPopup(popup_e73cb51acba4068cc8e9149852bcb743)
+        ;
+
+        
+    
+    
+            var marker_feefaf1e255a2c0e3eec38645d6da03d = L.marker(
+                [-28.02833, -54.34972],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_37dc1554c3b3de8650144a14b01f8502 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7466352d697d0033588a3713d90da5ae = $(`<div id="html_7466352d697d0033588a3713d90da5ae" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Giruá</b><br>             Instituição: Prefeitura de Giruá<br>             Vagas: 1 vaga até R$ 2224,98Professor de GeografiaSuperior<br>             Prazo inscrição: 17/06/2024             </div>`)[0];
+                popup_37dc1554c3b3de8650144a14b01f8502.setContent(html_7466352d697d0033588a3713d90da5ae);
+            
+        
+
+        marker_feefaf1e255a2c0e3eec38645d6da03d.bindPopup(popup_37dc1554c3b3de8650144a14b01f8502)
+        ;
+
+        
+    
+    
+            var marker_ed8fc1ddf509ba7aeac905d25ccd4275 = L.marker(
+                [-29.6894012, -50.8511645],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_b38b39982dd81e4a2b575c797b52ba48 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_81cb8128332d7d6ee40368db066dd6da = $(`<div id="html_81cb8128332d7d6ee40368db066dd6da" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Igrejinha</b><br>             Instituição: Prefeitura de Igrejinha<br>             Vagas: 1 vaga até R$ 2.290,29Professor de AEESuperior<br>             Prazo inscrição: 17/06/2024             </div>`)[0];
+                popup_b38b39982dd81e4a2b575c797b52ba48.setContent(html_81cb8128332d7d6ee40368db066dd6da);
+            
+        
+
+        marker_ed8fc1ddf509ba7aeac905d25ccd4275.bindPopup(popup_b38b39982dd81e4a2b575c797b52ba48)
+        ;
+
+        
+    
+    
+            var marker_9e2f55259df0ce0a4da9a374faa01628 = L.marker(
+                [-27.6616073, -53.6421338],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_13e596d506dec4ae6da53908d57f86a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7211e40df6491093cbb777d66f20dcc9 = $(`<div id="html_7211e40df6491093cbb777d66f20dcc9" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Redentora</b><br>             Instituição: Prefeitura de Redentora<br>             Vagas: 10 vagas até R$ 5906,61Vários CargosFundamental / Médio / Superior<br>             Prazo inscrição: 17/06/2024             </div>`)[0];
+                popup_13e596d506dec4ae6da53908d57f86a9.setContent(html_7211e40df6491093cbb777d66f20dcc9);
+            
+        
+
+        marker_9e2f55259df0ce0a4da9a374faa01628.bindPopup(popup_13e596d506dec4ae6da53908d57f86a9)
+        ;
+
+        
+    
+    
+            var marker_268bf9202c6ffec6df0cd96fa10d60e9 = L.marker(
+                [-29.29705, -52.92281],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_f0dd7acf20e692075e578b1829f0d7a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2c513bf6d7180a4302ffaa7f37517c94 = $(`<div id="html_2c513bf6d7180a4302ffaa7f37517c94" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Segredo</b><br>             Instituição: Prefeitura de Segredo<br>             Vagas: 24 vagas até R$ 10.915,56Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 10/07/2024             </div>`)[0];
+                popup_f0dd7acf20e692075e578b1829f0d7a2.setContent(html_2c513bf6d7180a4302ffaa7f37517c94);
+            
+        
+
+        marker_268bf9202c6ffec6df0cd96fa10d60e9.bindPopup(popup_f0dd7acf20e692075e578b1829f0d7a2)
+        ;
+
+        
+    
+    
+            var marker_56642eea2c5b5e297e4c217127f8c22a = L.marker(
+                [-27.759934, -54.4788518],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_2613cdd0429ed93e1097a65beed07410 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ed4595c1603e3a9989d4afc7b3b7b8b = $(`<div id="html_4ed4595c1603e3a9989d4afc7b3b7b8b" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Tuparendi</b><br>             Instituição: Prefeitura de Tuparendi<br>             Vagas: 60 vagas até R$ 2342,90ProfessoresMagistério / Superior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_2613cdd0429ed93e1097a65beed07410.setContent(html_4ed4595c1603e3a9989d4afc7b3b7b8b);
+            
+        
+
+        marker_56642eea2c5b5e297e4c217127f8c22a.bindPopup(popup_2613cdd0429ed93e1097a65beed07410)
+        ;
+
+        
+    
+    
+            var marker_21e62c43b38ee3581be844de5934c1b1 = L.marker(
+                [-28.0460421, -54.68107305140401],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_fca379a0125db8c182c5a1ab77af6cb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56432ea96ff4ab3948b11815f667c017 = $(`<div id="html_56432ea96ff4ab3948b11815f667c017" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Ubiretama</b><br>             Instituição: Prefeitura de Ubiretama<br>             Vagas: Vagas até R$ 2482,43ProfessoresSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_fca379a0125db8c182c5a1ab77af6cb0.setContent(html_56432ea96ff4ab3948b11815f667c017);
+            
+        
+
+        marker_21e62c43b38ee3581be844de5934c1b1.bindPopup(popup_fca379a0125db8c182c5a1ab77af6cb0)
+        ;
+
+        
+    
+    
+            var marker_290aac84d47556e3ca2080199f642cb2 = L.marker(
+                [-29.7840353, -52.1839568],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_b7ec28d891e90294e997f0d7254abc50 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8652a066e20a6b78cd8390874225092d = $(`<div id="html_8652a066e20a6b78cd8390874225092d" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Vale Verde</b><br>             Instituição: Prefeitura de Vale Verde<br>             Vagas: 1 vaga até R$ 4044,42Vários CargosSuperior<br>             Prazo inscrição: 20 a21/06/2024             </div>`)[0];
+                popup_b7ec28d891e90294e997f0d7254abc50.setContent(html_8652a066e20a6b78cd8390874225092d);
+            
+        
+
+        marker_290aac84d47556e3ca2080199f642cb2.bindPopup(popup_b7ec28d891e90294e997f0d7254abc50)
+        ;
+
+        
+    
+    
+            var marker_5641b638ed9c580f93d3de44da43d559 = L.marker(
+                [-28.56028, -52.74833],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_fb3d1f651f8d9128e339be37d91ab2e5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_113ac2a9b9a8ca066cbf59ef52ad6a32 = $(`<div id="html_113ac2a9b9a8ca066cbf59ef52ad6a32" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Victor Graeff</b><br>             Instituição: Prefeitura de Victor Graeff<br>             Vagas: Vagas até R$ 2656,21Professor de anos iniciaisSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_fb3d1f651f8d9128e339be37d91ab2e5.setContent(html_113ac2a9b9a8ca066cbf59ef52ad6a32);
+            
+        
+
+        marker_5641b638ed9c580f93d3de44da43d559.bindPopup(popup_fb3d1f651f8d9128e339be37d91ab2e5)
+        ;
+
+        
+    
+    
+            var marker_6f20b4483e2ab5954c59c1ce1c756857 = L.marker(
+                [-31.287471, -51.0897986],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_3f12cae0db12826867ed3c5538558314 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8802827fb2e516b26dd872f20a230754 = $(`<div id="html_8802827fb2e516b26dd872f20a230754" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura e Câmara de Tavares</b><br>             Instituição: Prefeitura e Câmara de Tavares<br>             Vagas: 52 vagas até R$ 7635,54Vários CargosMédio / Técnico / Superior<br>             Prazo inscrição: 08/07/2024             </div>`)[0];
+                popup_3f12cae0db12826867ed3c5538558314.setContent(html_8802827fb2e516b26dd872f20a230754);
+            
+        
+
+        marker_6f20b4483e2ab5954c59c1ce1c756857.bindPopup(popup_3f12cae0db12826867ed3c5538558314)
+        ;
+
+        
+    
+    
+            var marker_bb502089a9744f636fff4c4c283353ab = L.marker(
+                [-31.77194, -52.3425],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_ced010178cc3ade1482cc686d118873a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e16c2e952e8525b0ff79df3a43b3492b = $(`<div id="html_e16c2e952e8525b0ff79df3a43b3492b" style="width: 100.0%; height: 100.0%;">             <b>UFPEL - Universidade Federal de Pelotas</b><br>             Instituição: UFPEL - Universidade Federal de Pelotas<br>             Vagas: 1 vaga até R$ 22.377,72Professor VisitanteSuperior<br>             Prazo inscrição: 24/06/2024             </div>`)[0];
+                popup_ced010178cc3ade1482cc686d118873a.setContent(html_e16c2e952e8525b0ff79df3a43b3492b);
+            
+        
+
+        marker_bb502089a9744f636fff4c4c283353ab.bindPopup(popup_ced010178cc3ade1482cc686d118873a)
+        ;
+
+        
+    
+    
+            var marker_be409eac804c04577987041f30d1233b = L.marker(
+                [-30.334214, -54.3227149],
+                {}
+            ).addTo(map_ff116996c0eda3e238fcb53e5a00749f);
+        
+    
+        var popup_e33b71de8d51206b762a4dc707ee89fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5a44f120ce1dd053ef956d16f0a67235 = $(`<div id="html_5a44f120ce1dd053ef956d16f0a67235" style="width: 100.0%; height: 100.0%;">             <b>UNIPAMPA - Universidade Federal do Pampa</b><br>             Instituição: UNIPAMPA - Universidade Federal do Pampa<br>             Vagas: 3 vagas até R$ 10.481,64Professor do Magistério SuperiorSuperior<br>             Prazo inscrição: 04/07/2024             </div>`)[0];
+                popup_e33b71de8d51206b762a4dc707ee89fb.setContent(html_5a44f120ce1dd053ef956d16f0a67235);
+            
+        
+
+        marker_be409eac804c04577987041f30d1233b.bindPopup(popup_e33b71de8d51206b762a4dc707ee89fb)
+        ;
+
+        
+    
+</script>
+</html>

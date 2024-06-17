@@ -1,0 +1,3050 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_99ac8cb65672f68b3dae8565dcab9411 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="text-align: center; font-family: Arial, sans-serif;">
+        <h1>Concursos Para Professor</h1>
+        <h3 style="color: gray;">Gerado em: 17/06/2024</h3>
+    </div>
+    
+    
+    <div id="notFoundButton" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+        <button onclick="document.getElementById('notFoundList').style.display = 
+        document.getElementById('notFoundList').style.display === 'none' ? 'block' : 'none';">
+            Show/Hide Not Found List
+        </button>
+    </div>
+    <div id="notFoundList" style="display: none; background-color: white; border: 1px solid black; padding: 10px; max-width: 300px; max-height: 300px; overflow-y: auto; position: fixed; top: 50px; right: 10px; z-index: 1000;">
+        <h4>Coordinates not found:</h4><ul><li>IFMG - Instituto Federal de Educação, Ciência e Tecnologia</li><li>IFMG - Instituto Federal de Educação, Ciência e Tecnologia</li><li>IFMG - Instituto Federal de Educação, Ciência e Tecnologia</li><li>IFMG - Instituto Federal de Educação, Ciência e Tecnologia</li><li>IFMG - Instituto Federal de Educação, Ciência e Tecnologia</li><li>IFMG - Instituto Federal de Educação, Ciência e Tecnologia</li></ul>
+    </div>
+    
+    
+            <div class="folium-map" id="map_99ac8cb65672f68b3dae8565dcab9411" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_99ac8cb65672f68b3dae8565dcab9411 = L.map(
+                "map_99ac8cb65672f68b3dae8565dcab9411",
+                {
+                    center: [-30.0, -53.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e83d601c2ee2b1154a7e180f70e0ffea = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e83d601c2ee2b1154a7e180f70e0ffea.addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+            var marker_51a3dc2a373edc9819cc8dbd17c60d08 = L.marker(
+                [-21.88778, -42.70444],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_ca4648003fd077cf4652b2477a7bcde6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed352812f84278e580e3c551abbf1e36 = $(`<div id="html_ed352812f84278e580e3c551abbf1e36" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Além Paraíba</b><br>             Instituição: Prefeitura de Além Paraíba<br>             Vagas: 211 vagas até R$ 2597,08Vários CargosMédio / Magistério / Superior<br>             Prazo inscrição: 01/08/2024             </div>`)[0];
+                popup_ca4648003fd077cf4652b2477a7bcde6.setContent(html_ed352812f84278e580e3c551abbf1e36);
+            
+        
+
+        marker_51a3dc2a373edc9819cc8dbd17c60d08.bindPopup(popup_ca4648003fd077cf4652b2477a7bcde6)
+        ;
+
+        
+    
+    
+            var marker_29a671f9cdae44983bbb134bbcf27b25 = L.marker(
+                [-17.70306, -40.76639],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_dfb6a1e0bf248650c5fae8f310b4bdf5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_45670c00dd6e8abd151a4596fc1c6aa6 = $(`<div id="html_45670c00dd6e8abd151a4596fc1c6aa6" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Carlos Chagas</b><br>             Instituição: Prefeitura de Carlos Chagas<br>             Vagas: 126 vagas até R$ 9165,66Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Reaberto até21/06/2024             </div>`)[0];
+                popup_dfb6a1e0bf248650c5fae8f310b4bdf5.setContent(html_45670c00dd6e8abd151a4596fc1c6aa6);
+            
+        
+
+        marker_29a671f9cdae44983bbb134bbcf27b25.bindPopup(popup_dfb6a1e0bf248650c5fae8f310b4bdf5)
+        ;
+
+        
+    
+    
+            var marker_302530803261b6e1f0fad3b55cb7c285 = L.marker(
+                [-20.1700751, -44.9108216],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d6a99fa25e6b8c099c668a00be2c7bd6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c59afe65d2c86c301a4a8a091ed329b6 = $(`<div id="html_c59afe65d2c86c301a4a8a091ed329b6" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Divinópolis</b><br>             Instituição: Prefeitura de Divinópolis<br>             Vagas: 1426 vagas até R$ 12.862,27Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 05/08 a09/09/2024             </div>`)[0];
+                popup_d6a99fa25e6b8c099c668a00be2c7bd6.setContent(html_c59afe65d2c86c301a4a8a091ed329b6);
+            
+        
+
+        marker_302530803261b6e1f0fad3b55cb7c285.bindPopup(popup_d6a99fa25e6b8c099c668a00be2c7bd6)
+        ;
+
+        
+    
+    
+            var marker_e6eeab7c832b6569685bc1e1beb7e2c9 = L.marker(
+                [-20.0217985, -44.0675057],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_b769e6284aad8750bb1bb7f467c4a93c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4c18725aa545312d2125ed185ed83874 = $(`<div id="html_4c18725aa545312d2125ed185ed83874" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Ibirité</b><br>             Instituição: Prefeitura de Ibirité<br>             Vagas: 1401 vagas até R$ 16.690,91Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 24/06 a24/07/2024             </div>`)[0];
+                popup_b769e6284aad8750bb1bb7f467c4a93c.setContent(html_4c18725aa545312d2125ed185ed83874);
+            
+        
+
+        marker_e6eeab7c832b6569685bc1e1beb7e2c9.bindPopup(popup_b769e6284aad8750bb1bb7f467c4a93c)
+        ;
+
+        
+    
+    
+            var marker_269f3d955f419101d9868908c2c125cc = L.marker(
+                [-21.1991486, -42.6129577],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_84861168e0c7c4ff9a77c062e016d557 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c8c69c53280c90f6ec18777bea8bffd4 = $(`<div id="html_c8c69c53280c90f6ec18777bea8bffd4" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Miraí</b><br>             Instituição: Prefeitura de Miraí<br>             Vagas: 40 vagas até R$ 6906,51Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 18/06 a18/07/2024             </div>`)[0];
+                popup_84861168e0c7c4ff9a77c062e016d557.setContent(html_c8c69c53280c90f6ec18777bea8bffd4);
+            
+        
+
+        marker_269f3d955f419101d9868908c2c125cc.bindPopup(popup_84861168e0c7c4ff9a77c062e016d557)
+        ;
+
+        
+    
+    
+            var marker_bb5d67e46e36b519519cb0c459a386c0 = L.marker(
+                [-16.730794, -43.8705351],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_993b672ea51e40437268e628b149072f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2e3722402104377f5aef5e231736da1 = $(`<div id="html_e2e3722402104377f5aef5e231736da1" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Montes Claros</b><br>             Instituição: Prefeitura de Montes Claros<br>             Vagas: 1.753 vagas até R$ 5905,02Vários CargosMédio / Técnico / Superior<br>             Prazo inscrição: 01 a31/07/2024             </div>`)[0];
+                popup_993b672ea51e40437268e628b149072f.setContent(html_e2e3722402104377f5aef5e231736da1);
+            
+        
+
+        marker_bb5d67e46e36b519519cb0c459a386c0.bindPopup(popup_993b672ea51e40437268e628b149072f)
+        ;
+
+        
+    
+    
+            var marker_7d099a7260e58786e3d282d75b3cc4d8 = L.marker(
+                [-21.36762015, -46.52269794689623],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_fa485b2877b36f3967ee31a8bc6ab712 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_27e3c3ec099d6d6b47d6a6db95743afe = $(`<div id="html_27e3c3ec099d6d6b47d6a6db95743afe" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Muzambinho</b><br>             Instituição: Prefeitura de Muzambinho<br>             Vagas: 286 vagas até R$ 20.175,68Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 17/06/2024             </div>`)[0];
+                popup_fa485b2877b36f3967ee31a8bc6ab712.setContent(html_27e3c3ec099d6d6b47d6a6db95743afe);
+            
+        
+
+        marker_7d099a7260e58786e3d282d75b3cc4d8.bindPopup(popup_fa485b2877b36f3967ee31a8bc6ab712)
+        ;
+
+        
+    
+    
+            var marker_f9827a6803c49303137a809582f9472d = L.marker(
+                [-19.9854675, -43.84742750922619],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_0beaec571d3003682efd7d2640a73e67 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be6ddefc2f90ab81ca8fae14f0c6d971 = $(`<div id="html_be6ddefc2f90ab81ca8fae14f0c6d971" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Nova Lima</b><br>             Instituição: Prefeitura de Nova Lima<br>             Vagas: 203 vagas até R$ 3315,72Vários CargosMédio / Superior<br>             Prazo inscrição: 22/07 a22/08/2024             </div>`)[0];
+                popup_0beaec571d3003682efd7d2640a73e67.setContent(html_be6ddefc2f90ab81ca8fae14f0c6d971);
+            
+        
+
+        marker_f9827a6803c49303137a809582f9472d.bindPopup(popup_0beaec571d3003682efd7d2640a73e67)
+        ;
+
+        
+    
+    
+            var marker_ef4080a5b55be2f33be2b185d94f8884 = L.marker(
+                [-20.04917, -44.27389],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_e30c6e805b6c05b975fc0fe18a3369d4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_418b98300060f43c03cc9eee77892faa = $(`<div id="html_418b98300060f43c03cc9eee77892faa" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura São Joaquim de Bicas</b><br>             Instituição: Prefeitura São Joaquim de Bicas<br>             Vagas: 368 vagas até R$ 4.862,60Vários CargosFundamental Incompleto / Médio / Superior<br>             Prazo inscrição: 16/07/2024             </div>`)[0];
+                popup_e30c6e805b6c05b975fc0fe18a3369d4.setContent(html_418b98300060f43c03cc9eee77892faa);
+            
+        
+
+        marker_ef4080a5b55be2f33be2b185d94f8884.bindPopup(popup_e30c6e805b6c05b975fc0fe18a3369d4)
+        ;
+
+        
+    
+    
+            var marker_77efc11559acf00b3e8044dede09a4f9 = L.marker(
+                [-18.0, -44.0],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_86b790d6405c6253a9630ae7bbe4ed98 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0c34a906e7a5d7f425cec666150a136 = $(`<div id="html_c0c34a906e7a5d7f425cec666150a136" style="width: 100.0%; height: 100.0%;">             <b>CEFET - Centro Federal de Educação Tecnológica de Minas Gerais</b><br>             Instituição: CEFET - Centro Federal de Educação Tecnológica de Minas Gerais<br>             Vagas: 2 vagasProfessor SubstitutoSuperior<br>             Prazo inscrição: 23/06/2024             </div>`)[0];
+                popup_86b790d6405c6253a9630ae7bbe4ed98.setContent(html_c0c34a906e7a5d7f425cec666150a136);
+            
+        
+
+        marker_77efc11559acf00b3e8044dede09a4f9.bindPopup(popup_86b790d6405c6253a9630ae7bbe4ed98)
+        ;
+
+        
+    
+    
+            var marker_cc9607c430f779a57f086656cbf20ff3 = L.marker(
+                [-21.275, -43.178889],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_313d6b3f1ce60e41a2ca1e41d1da38a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7f3533d347e39ec1d6baef2028d7eb7 = $(`<div id="html_c7f3533d347e39ec1d6baef2028d7eb7" style="width: 100.0%; height: 100.0%;">             <b>IF Sudeste - Instituto Federal de Educação, Ciência e Tecnologia - Rio Pomba</b><br>             Instituição: IF Sudeste - Instituto Federal de Educação, Ciência e Tecnologia - Rio Pomba<br>             Vagas: 1 vaga até R$ 6.356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_313d6b3f1ce60e41a2ca1e41d1da38a3.setContent(html_c7f3533d347e39ec1d6baef2028d7eb7);
+            
+        
+
+        marker_cc9607c430f779a57f086656cbf20ff3.bindPopup(popup_313d6b3f1ce60e41a2ca1e41d1da38a3)
+        ;
+
+        
+    
+    
+            var marker_187fe33333032369b4a92cf904d53ecf = L.marker(
+                [-16.7273538, -43.8717676],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_9d44a68a729f16eb36b79b60974f0a58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_892b58786886bbd2065edbcc91b7de59 = $(`<div id="html_892b58786886bbd2065edbcc91b7de59" style="width: 100.0%; height: 100.0%;">             <b>IFNMG - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFNMG - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 32 vagas até R$ 10.481,64ProfessorSuperior<br>             Prazo inscrição: 09/07/2024             </div>`)[0];
+                popup_9d44a68a729f16eb36b79b60974f0a58.setContent(html_892b58786886bbd2065edbcc91b7de59);
+            
+        
+
+        marker_187fe33333032369b4a92cf904d53ecf.bindPopup(popup_9d44a68a729f16eb36b79b60974f0a58)
+        ;
+
+        
+    
+    
+            var marker_8027e09accfd247c08f5e8cb88f58c27 = L.marker(
+                [-22.2343858, -45.9327241],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_bd8869c46a3aadbbcdd2f3f58e5a233e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ffb2288e8dca4160c559ef76c0f879b = $(`<div id="html_4ffb2288e8dca4160c559ef76c0f879b" style="width: 100.0%; height: 100.0%;">             <b>IFSULDEMINAS - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFSULDEMINAS - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 27/06/2024             </div>`)[0];
+                popup_bd8869c46a3aadbbcdd2f3f58e5a233e.setContent(html_4ffb2288e8dca4160c559ef76c0f879b);
+            
+        
+
+        marker_8027e09accfd247c08f5e8cb88f58c27.bindPopup(popup_bd8869c46a3aadbbcdd2f3f58e5a233e)
+        ;
+
+        
+    
+    
+            var marker_06d99275b502c1188adc566fd73b3687 = L.marker(
+                [-9.9722485, -49.0401245],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_1469b60a00257663ec1076d7bc80170f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9024995707195b36cbff17c1af9d7836 = $(`<div id="html_9024995707195b36cbff17c1af9d7836" style="width: 100.0%; height: 100.0%;">             <b>IFTM - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFTM - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_1469b60a00257663ec1076d7bc80170f.setContent(html_9024995707195b36cbff17c1af9d7836);
+            
+        
+
+        marker_06d99275b502c1188adc566fd73b3687.bindPopup(popup_1469b60a00257663ec1076d7bc80170f)
+        ;
+
+        
+    
+    
+            var marker_7b8241d28d38fce09261b5815969cd30 = L.marker(
+                [-20.96959, -45.41717],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_5995c160194fbabb044eba40b7eb2521 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_da8cac8910d2848d0ed2313f1e382a31 = $(`<div id="html_da8cac8910d2848d0ed2313f1e382a31" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Aguanil</b><br>             Instituição: Prefeitura de Aguanil<br>             Vagas: 57 vagas até R$ 4902,24Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: conferir período por cargo07/08 a05/09/2024             </div>`)[0];
+                popup_5995c160194fbabb044eba40b7eb2521.setContent(html_da8cac8910d2848d0ed2313f1e382a31);
+            
+        
+
+        marker_7b8241d28d38fce09261b5815969cd30.bindPopup(popup_5995c160194fbabb044eba40b7eb2521)
+        ;
+
+        
+    
+    
+            var marker_bf6fb4aeba030567a3f50423820adbe7 = L.marker(
+                [-20.28534905, -45.540429335458484],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_6851d301ca4e25e0a4a3dc2b6690771e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_863cdafdee3a7e44964cc56c535853cf = $(`<div id="html_863cdafdee3a7e44964cc56c535853cf" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Buritis</b><br>             Instituição: Prefeitura de Buritis<br>             Vagas: 523 vagas até R$ 7170,46Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 29/07 a29/08/2024             </div>`)[0];
+                popup_6851d301ca4e25e0a4a3dc2b6690771e.setContent(html_863cdafdee3a7e44964cc56c535853cf);
+            
+        
+
+        marker_bf6fb4aeba030567a3f50423820adbe7.bindPopup(popup_6851d301ca4e25e0a4a3dc2b6690771e)
+        ;
+
+        
+    
+    
+            var marker_ec68cb4d028e75c93ac0c8eef575b0f3 = L.marker(
+                [-22.3554043, -45.7796324],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_21ba684e4d29e3db77274759b560f6da = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b3503737eb25e93d1a7514fe1531692a = $(`<div id="html_b3503737eb25e93d1a7514fe1531692a" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Cachoeira de Minas</b><br>             Instituição: Prefeitura de Cachoeira de Minas<br>             Vagas: 131 vagas até R$ 4038,85Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 26/06/2024             </div>`)[0];
+                popup_21ba684e4d29e3db77274759b560f6da.setContent(html_b3503737eb25e93d1a7514fe1531692a);
+            
+        
+
+        marker_ec68cb4d028e75c93ac0c8eef575b0f3.bindPopup(popup_21ba684e4d29e3db77274759b560f6da)
+        ;
+
+        
+    
+    
+            var marker_8ea9ef13d61f426b6416a5bf1778775d = L.marker(
+                [-21.7875, -45.67156],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_fc4326637f2049bcfe067dec75cb7889 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e71b36e6ccd29f89a41c21732f0b796c = $(`<div id="html_e71b36e6ccd29f89a41c21732f0b796c" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Cordislândia</b><br>             Instituição: Prefeitura de Cordislândia<br>             Vagas: 91 vagas até R$ 4313,28Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_fc4326637f2049bcfe067dec75cb7889.setContent(html_e71b36e6ccd29f89a41c21732f0b796c);
+            
+        
+
+        marker_8ea9ef13d61f426b6416a5bf1778775d.bindPopup(popup_fc4326637f2049bcfe067dec75cb7889)
+        ;
+
+        
+    
+    
+            var marker_fe67c20e18fd515ad6c2c57432e81c22 = L.marker(
+                [-20.45029, -45.53592],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_aac988090eb7123bffcbf0b5793a302d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_965ee3869358ad6aaa24ebc5fc53f3ed = $(`<div id="html_965ee3869358ad6aaa24ebc5fc53f3ed" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Córrego Fundo</b><br>             Instituição: Prefeitura de Córrego Fundo<br>             Vagas: 34 vagas até R$ 5082,79Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_aac988090eb7123bffcbf0b5793a302d.setContent(html_965ee3869358ad6aaa24ebc5fc53f3ed);
+            
+        
+
+        marker_fe67c20e18fd515ad6c2c57432e81c22.bindPopup(popup_aac988090eb7123bffcbf0b5793a302d)
+        ;
+
+        
+    
+    
+            var marker_204a6078c1e755bcc46e801f398b9d10 = L.marker(
+                [-14.204023150000001, -41.66983489657876],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_e010b3d48f06b74a6d2118db5d184431 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d287475d9465a69aef4090cd7ae4666c = $(`<div id="html_d287475d9465a69aef4090cd7ae4666c" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Esmeraldas</b><br>             Instituição: Prefeitura de Esmeraldas<br>             Vagas: 156 vagas até R$ 3099,51Vários CargosFundamental / Médio / Superior<br>             Prazo inscrição: 19/07 a20/08/2024             </div>`)[0];
+                popup_e010b3d48f06b74a6d2118db5d184431.setContent(html_d287475d9465a69aef4090cd7ae4666c);
+            
+        
+
+        marker_204a6078c1e755bcc46e801f398b9d10.bindPopup(popup_e010b3d48f06b74a6d2118db5d184431)
+        ;
+
+        
+    
+    
+            var marker_f4b23327657e6eae3762b6b303a7e283 = L.marker(
+                [-14.92611, -42.81917],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_8b3a7d17170377ad7d226640e01fa75e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eaa617ba17209b498066ae5e98544244 = $(`<div id="html_eaa617ba17209b498066ae5e98544244" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Espinosa</b><br>             Instituição: Prefeitura de Espinosa<br>             Vagas: 538 vagas até R$ 5.500,00Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/08 a05/09/2024             </div>`)[0];
+                popup_8b3a7d17170377ad7d226640e01fa75e.setContent(html_eaa617ba17209b498066ae5e98544244);
+            
+        
+
+        marker_f4b23327657e6eae3762b6b303a7e283.bindPopup(popup_8b3a7d17170377ad7d226640e01fa75e)
+        ;
+
+        
+    
+    
+            var marker_aaf195340ca20ce7fbd646d3f9313e3c = L.marker(
+                [-20.01198215, -45.98014148874536],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_7cf8f5beb07cc58d3a6e800b44621fbf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f9384fb17e92ec5bb5362605a14423f1 = $(`<div id="html_f9384fb17e92ec5bb5362605a14423f1" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Formiga</b><br>             Instituição: Prefeitura de Formiga<br>             Vagas: Vagas até R$ 4580,57Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Superior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_7cf8f5beb07cc58d3a6e800b44621fbf.setContent(html_f9384fb17e92ec5bb5362605a14423f1);
+            
+        
+
+        marker_aaf195340ca20ce7fbd646d3f9313e3c.bindPopup(popup_7cf8f5beb07cc58d3a6e800b44621fbf)
+        ;
+
+        
+    
+    
+            var marker_47b6eeff1b6631e0cf6243dfba4a89f9 = L.marker(
+                [-20.5718037, -43.0057078],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_60e0fdb7f36ab0257259f183fdaee438 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dadd67528f7dabab424e866bf007748b = $(`<div id="html_dadd67528f7dabab424e866bf007748b" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Guaraciaba</b><br>             Instituição: Prefeitura de Guaraciaba<br>             Vagas: 157 vagas até R$ 13.439,17Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/06/2024             </div>`)[0];
+                popup_60e0fdb7f36ab0257259f183fdaee438.setContent(html_dadd67528f7dabab424e866bf007748b);
+            
+        
+
+        marker_47b6eeff1b6631e0cf6243dfba4a89f9.bindPopup(popup_60e0fdb7f36ab0257259f183fdaee438)
+        ;
+
+        
+    
+    
+            var marker_47e3f65944d3dc22e1f902ed2c0c8018 = L.marker(
+                [-21.07628295, -47.04753900305222],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_0e95189e8d16c83c445ce8d58e5cbc5f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b757532e235f2fa0d449e4283466e6e8 = $(`<div id="html_b757532e235f2fa0d449e4283466e6e8" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itamogi</b><br>             Instituição: Prefeitura de Itamogi<br>             Vagas: 40 vagas até R$ 7802,98Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Apenas para alguns cargos24/06/2024             </div>`)[0];
+                popup_0e95189e8d16c83c445ce8d58e5cbc5f.setContent(html_b757532e235f2fa0d449e4283466e6e8);
+            
+        
+
+        marker_47e3f65944d3dc22e1f902ed2c0c8018.bindPopup(popup_0e95189e8d16c83c445ce8d58e5cbc5f)
+        ;
+
+        
+    
+    
+            var marker_dc1a7d05199034b245f373115fb142ac = L.marker(
+                [-19.1713581, -41.86345075],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_df39cac77c19565780264cd72dba5b88 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2284af6b466c0a5ae5b3e3781894134d = $(`<div id="html_2284af6b466c0a5ae5b3e3781894134d" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itanhomi</b><br>             Instituição: Prefeitura de Itanhomi<br>             Vagas: 134 vagas até R$ 4747,49Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Reaberto até07/06/2024             </div>`)[0];
+                popup_df39cac77c19565780264cd72dba5b88.setContent(html_2284af6b466c0a5ae5b3e3781894134d);
+            
+        
+
+        marker_dc1a7d05199034b245f373115fb142ac.bindPopup(popup_df39cac77c19565780264cd72dba5b88)
+        ;
+
+        
+    
+    
+            var marker_24533aab753dcef222afa3def2fb6d27 = L.marker(
+                [-16.5625458, -41.5001952],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d928164a29e350fb2a0ba8db23d9f45d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec173782147ffc939f68db4fd4fb2296 = $(`<div id="html_ec173782147ffc939f68db4fd4fb2296" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itaobim</b><br>             Instituição: Prefeitura de Itaobim<br>             Vagas: 15 vagas até R$ 4.198,24Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 02/09 a02/10/2024             </div>`)[0];
+                popup_d928164a29e350fb2a0ba8db23d9f45d.setContent(html_ec173782147ffc939f68db4fd4fb2296);
+            
+        
+
+        marker_24533aab753dcef222afa3def2fb6d27.bindPopup(popup_d928164a29e350fb2a0ba8db23d9f45d)
+        ;
+
+        
+    
+    
+            var marker_68afc8167c66777b18582a4122c9955c = L.marker(
+                [-18.7829469, -40.9816691],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3e1ec87b7ecbe4037691e543bae3bd15 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0aeddac0b5e24068044387aa196189cc = $(`<div id="html_0aeddac0b5e24068044387aa196189cc" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Mantena</b><br>             Instituição: Prefeitura de Mantena<br>             Vagas: 211 vagas até R$ 10.054,00Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 24/06 a25/07/2024             </div>`)[0];
+                popup_3e1ec87b7ecbe4037691e543bae3bd15.setContent(html_0aeddac0b5e24068044387aa196189cc);
+            
+        
+
+        marker_68afc8167c66777b18582a4122c9955c.bindPopup(popup_3e1ec87b7ecbe4037691e543bae3bd15)
+        ;
+
+        
+    
+    
+            var marker_80ea0645af4a6fb1dbe5cb50e22f1fbb = L.marker(
+                [-20.078985, -41.1229622],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d222eb0b97829671c8e75ab19f74519a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29f9b5ed8ba0596bfca61e147da92284 = $(`<div id="html_29f9b5ed8ba0596bfca61e147da92284" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Maria da Fé</b><br>             Instituição: Prefeitura de Maria da Fé<br>             Vagas: 102 vagas até R$ 4297,26Vários CargosFundamental Incompleto / Fundamental / Médio / Superior<br>             Prazo inscrição: 05/08 a02/09/2024             </div>`)[0];
+                popup_d222eb0b97829671c8e75ab19f74519a.setContent(html_29f9b5ed8ba0596bfca61e147da92284);
+            
+        
+
+        marker_80ea0645af4a6fb1dbe5cb50e22f1fbb.bindPopup(popup_d222eb0b97829671c8e75ab19f74519a)
+        ;
+
+        
+    
+    
+            var marker_84ecf6d1c28d9011fb775dbf93bd54dd = L.marker(
+                [-17.217649, -42.5948565],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_48ef85e000b6a2d6e9638e3c61e30c87 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0627ebf607e3d821f256d4e7ae190805 = $(`<div id="html_0627ebf607e3d821f256d4e7ae190805" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Minas Novas</b><br>             Instituição: Prefeitura de Minas Novas<br>             Vagas: 239 vagas até R$ 16.593,60Vários CargosAlfabetizado / Médio / Técnico / Superior<br>             Prazo inscrição: 27/06/2024             </div>`)[0];
+                popup_48ef85e000b6a2d6e9638e3c61e30c87.setContent(html_0627ebf607e3d821f256d4e7ae190805);
+            
+        
+
+        marker_84ecf6d1c28d9011fb775dbf93bd54dd.bindPopup(popup_48ef85e000b6a2d6e9638e3c61e30c87)
+        ;
+
+        
+    
+    
+            var marker_486165b72cb9db253091320ba294d49a = L.marker(
+                [-21.62972, -43.01972],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_6601b9d3a038b29194f52243cffac511 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96b09de17344d846811dc11956e03eec = $(`<div id="html_96b09de17344d846811dc11956e03eec" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Rochedo de Minas</b><br>             Instituição: Prefeitura de Rochedo de Minas<br>             Vagas: 1 vaga até R$ 25,45 h/aProfessor Municipal II - GeografiaSuperior<br>             Prazo inscrição: 20 a21/06/2024             </div>`)[0];
+                popup_6601b9d3a038b29194f52243cffac511.setContent(html_96b09de17344d846811dc11956e03eec);
+            
+        
+
+        marker_486165b72cb9db253091320ba294d49a.bindPopup(popup_6601b9d3a038b29194f52243cffac511)
+        ;
+
+        
+    
+    
+            var marker_31b077aa911f992d60647d79b532c093 = L.marker(
+                [-18.29694, -44.22306],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_2f4f4aa2120be0b1fcbf763b61f581e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cb4cc87481e34c3c18ba25c32e175dda = $(`<div id="html_cb4cc87481e34c3c18ba25c32e175dda" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Santo Hipólito</b><br>             Instituição: Prefeitura de Santo Hipólito<br>             Vagas: 64 vagas até R$ 3410,58Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 22/07 a19/08/2024             </div>`)[0];
+                popup_2f4f4aa2120be0b1fcbf763b61f581e2.setContent(html_cb4cc87481e34c3c18ba25c32e175dda);
+            
+        
+
+        marker_31b077aa911f992d60647d79b532c093.bindPopup(popup_2f4f4aa2120be0b1fcbf763b61f581e2)
+        ;
+
+        
+    
+    
+            var marker_188c06bcf2e1635ca751eb2513bd116d = L.marker(
+                [-20.77276365, -41.67754875503177],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_4d8dae7eccad579eb14f90e29595c1e8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dacf1f5b261c45171b8bf6167fa176f1 = $(`<div id="html_dacf1f5b261c45171b8bf6167fa176f1" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São Francisco do Glória</b><br>             Instituição: Prefeitura de São Francisco do Glória<br>             Vagas: 9 vagas até R$ 3345,59Professores de Apoio à Educação EspecialSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_4d8dae7eccad579eb14f90e29595c1e8.setContent(html_dacf1f5b261c45171b8bf6167fa176f1);
+            
+        
+
+        marker_188c06bcf2e1635ca751eb2513bd116d.bindPopup(popup_4d8dae7eccad579eb14f90e29595c1e8)
+        ;
+
+        
+    
+    
+            var marker_94e143419618b90a73a2548777159366 = L.marker(
+                [-19.98278, -44.85889],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_99228a8f4697d0d2c768cc8b0228edad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d82b6df6f84332c86caa9049815ddd4 = $(`<div id="html_4d82b6df6f84332c86caa9049815ddd4" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São Gonçalo do Pará</b><br>             Instituição: Prefeitura de São Gonçalo do Pará<br>             Vagas: 180 vagas até R$ 6258,63Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/08 a06/09/2024             </div>`)[0];
+                popup_99228a8f4697d0d2c768cc8b0228edad.setContent(html_4d82b6df6f84332c86caa9049815ddd4);
+            
+        
+
+        marker_94e143419618b90a73a2548777159366.bindPopup(popup_99228a8f4697d0d2c768cc8b0228edad)
+        ;
+
+        
+    
+    
+            var marker_fec9277dda23a845a6751f4727372eda = L.marker(
+                [-20.39361, -42.15139],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_32abc9c14c1db39a88d392b6089fc079 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29c1518b58c06248ad6c6034253dff95 = $(`<div id="html_29c1518b58c06248ad6c6034253dff95" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São João do Manhuaçu</b><br>             Instituição: Prefeitura de São João do Manhuaçu<br>             Vagas: 171 vagas até R$ 15.000,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 13/06/2024             </div>`)[0];
+                popup_32abc9c14c1db39a88d392b6089fc079.setContent(html_29c1518b58c06248ad6c6034253dff95);
+            
+        
+
+        marker_fec9277dda23a845a6751f4727372eda.bindPopup(popup_32abc9c14c1db39a88d392b6089fc079)
+        ;
+
+        
+    
+    
+            var marker_401f7e9ed0ce22d8e3712336a99ffeeb = L.marker(
+                [-18.72599, -41.1609051],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_4e3b9cabc73d58394b2022c4848c6d42 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e836c353b53cb41f94c72562206fc6c = $(`<div id="html_4e836c353b53cb41f94c72562206fc6c" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São João do Manteninha</b><br>             Instituição: Prefeitura de São João do Manteninha<br>             Vagas: 31 vagas até R$ 3.313,58Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 08/07 a06/08/2024             </div>`)[0];
+                popup_4e3b9cabc73d58394b2022c4848c6d42.setContent(html_4e836c353b53cb41f94c72562206fc6c);
+            
+        
+
+        marker_401f7e9ed0ce22d8e3712336a99ffeeb.bindPopup(popup_4e3b9cabc73d58394b2022c4848c6d42)
+        ;
+
+        
+    
+    
+            var marker_22436fe3f3653aca41c22986224e579a = L.marker(
+                [-20.00528, -41.74472],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_c69853c2a47cf19d3147fa2a51104006 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_047fca077067c63c30084b0bef222e9e = $(`<div id="html_047fca077067c63c30084b0bef222e9e" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São José do Mantimento</b><br>             Instituição: Prefeitura de São José do Mantimento<br>             Vagas: 123 vagas até R$ 13.000,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 12/08 a12/09/2024             </div>`)[0];
+                popup_c69853c2a47cf19d3147fa2a51104006.setContent(html_047fca077067c63c30084b0bef222e9e);
+            
+        
+
+        marker_22436fe3f3653aca41c22986224e579a.bindPopup(popup_c69853c2a47cf19d3147fa2a51104006)
+        ;
+
+        
+    
+    
+            var marker_abfb3f098ea05e83d6d14dc17fad97ec = L.marker(
+                [-20.03528, -44.14472],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_27bcfc5f500751b80d6b032d7be33728 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e4fa792a1a14394840ebb9d04b9deaab = $(`<div id="html_e4fa792a1a14394840ebb9d04b9deaab" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Sarzedo</b><br>             Instituição: Prefeitura de Sarzedo<br>             Vagas: 20 vagas até R$ 3865,96Vários CargosMédio / Superior<br>             Prazo inscrição: 22/07 a21/08/2024             </div>`)[0];
+                popup_27bcfc5f500751b80d6b032d7be33728.setContent(html_e4fa792a1a14394840ebb9d04b9deaab);
+            
+        
+
+        marker_abfb3f098ea05e83d6d14dc17fad97ec.bindPopup(popup_27bcfc5f500751b80d6b032d7be33728)
+        ;
+
+        
+    
+    
+            var marker_945e589a78650ce4cbf601bb06fe7eeb = L.marker(
+                [-18.8925327, -43.0841377],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_cf28bf6fcac00a6b66e774e9568921cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_787c847a3f4dbc9018eeb46f665a19e4 = $(`<div id="html_787c847a3f4dbc9018eeb46f665a19e4" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Senhora do Porto</b><br>             Instituição: Prefeitura de Senhora do Porto<br>             Vagas: 63 vagas até R$ 4259,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 12/08 a11/09/2024             </div>`)[0];
+                popup_cf28bf6fcac00a6b66e774e9568921cb.setContent(html_787c847a3f4dbc9018eeb46f665a19e4);
+            
+        
+
+        marker_945e589a78650ce4cbf601bb06fe7eeb.bindPopup(popup_cf28bf6fcac00a6b66e774e9568921cb)
+        ;
+
+        
+    
+    
+            var marker_fd309d1e0996f928054e634a11ce617c = L.marker(
+                [-18.8216658, -42.7044396],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_33b04e0e5630b18d9dda6357d2f446d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_49f12adc0e38ad0613e02eb4a0cc6325 = $(`<div id="html_49f12adc0e38ad0613e02eb4a0cc6325" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Virginópolis</b><br>             Instituição: Prefeitura de Virginópolis<br>             Vagas: 115 vagas até R$ 4641,60Vários CargosMédio / Magistério / Técnico / Superior<br>             Prazo inscrição: Prorrogado até11/07/2024             </div>`)[0];
+                popup_33b04e0e5630b18d9dda6357d2f446d7.setContent(html_49f12adc0e38ad0613e02eb4a0cc6325);
+            
+        
+
+        marker_fd309d1e0996f928054e634a11ce617c.bindPopup(popup_33b04e0e5630b18d9dda6357d2f446d7)
+        ;
+
+        
+    
+    
+            var marker_4d54eb9b2e9fb17b1d454eb09ad4efed = L.marker(
+                [-21.123937249999997, -42.918594514198794],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_82fa2cafa9c11b6efd67261e532b52e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_adb2aa37140f310d208961256c5989f7 = $(`<div id="html_adb2aa37140f310d208961256c5989f7" style="width: 100.0%; height: 100.0%;">             <b>UEMG - Universidade do Estado de Minas Gerais</b><br>             Instituição: UEMG - Universidade do Estado de Minas Gerais<br>             Vagas: 57 vagas até R$ 7488,46Professores de Magistério SuperiorSuperior<br>             Prazo inscrição: 15 a30/07/2024             </div>`)[0];
+                popup_82fa2cafa9c11b6efd67261e532b52e2.setContent(html_adb2aa37140f310d208961256c5989f7);
+            
+        
+
+        marker_4d54eb9b2e9fb17b1d454eb09ad4efed.bindPopup(popup_82fa2cafa9c11b6efd67261e532b52e2)
+        ;
+
+        
+    
+    
+            var marker_5726781d9ed27df55b9b361d54266aba = L.marker(
+                [-21.77690665, -43.36916061596831],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3056e75ed4f2ccc3d17e9ed7763e7461 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ae8a81bcea429743fcc484fe33e16ac9 = $(`<div id="html_ae8a81bcea429743fcc484fe33e16ac9" style="width: 100.0%; height: 100.0%;">             <b>UFJF - Universidade Federal de Juiz de Fora</b><br>             Instituição: UFJF - Universidade Federal de Juiz de Fora<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 18/06/2024             </div>`)[0];
+                popup_3056e75ed4f2ccc3d17e9ed7763e7461.setContent(html_ae8a81bcea429743fcc484fe33e16ac9);
+            
+        
+
+        marker_5726781d9ed27df55b9b361d54266aba.bindPopup(popup_3056e75ed4f2ccc3d17e9ed7763e7461)
+        ;
+
+        
+    
+    
+            var marker_aba9a05e64dc05dc6c9d4b750a43e3b3 = L.marker(
+                [-21.77690665, -43.36916061596831],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_1e983d984f6ee767a7ae13f1dc88ef94 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_34f876989d42eec40828c75c1f11b0d2 = $(`<div id="html_34f876989d42eec40828c75c1f11b0d2" style="width: 100.0%; height: 100.0%;">             <b>UFJF - Universidade Federal de Juiz de Fora - Juiz de Fora</b><br>             Instituição: UFJF - Universidade Federal de Juiz de Fora - Juiz de Fora<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 18/06/2024             </div>`)[0];
+                popup_1e983d984f6ee767a7ae13f1dc88ef94.setContent(html_34f876989d42eec40828c75c1f11b0d2);
+            
+        
+
+        marker_aba9a05e64dc05dc6c9d4b750a43e3b3.bindPopup(popup_1e983d984f6ee767a7ae13f1dc88ef94)
+        ;
+
+        
+    
+    
+            var marker_69234a90ac21a94eff5b817c8f99195f = L.marker(
+                [-19.87317625, -43.97385326636239],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_48af24eae94659233831dbde09ae6faa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eac29684a1b2380b35485b41c62eea00 = $(`<div id="html_eac29684a1b2380b35485b41c62eea00" style="width: 100.0%; height: 100.0%;">             <b>UFMG - Universidade Federal de Minas Gerais</b><br>             Instituição: UFMG - Universidade Federal de Minas Gerais<br>             Vagas: 3 vagas até R$ 10.481,64Professor do Magistério SuperiorSuperior<br>             Prazo inscrição: 12/08/2024             </div>`)[0];
+                popup_48af24eae94659233831dbde09ae6faa.setContent(html_eac29684a1b2380b35485b41c62eea00);
+            
+        
+
+        marker_69234a90ac21a94eff5b817c8f99195f.bindPopup(popup_48af24eae94659233831dbde09ae6faa)
+        ;
+
+        
+    
+    
+            var marker_4ff63eca883cb81a734ce5a554978d47 = L.marker(
+                [-20.76763505, -42.858785454528096],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_ee7e2a09c4cf69228bdc198e2a3a3304 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_333f03bfac485c0260bc74fb7913ed7b = $(`<div id="html_333f03bfac485c0260bc74fb7913ed7b" style="width: 100.0%; height: 100.0%;">             <b>UFV - Universidade Federal de Viçosa</b><br>             Instituição: UFV - Universidade Federal de Viçosa<br>             Vagas: 1 vagaProfessor AdjuntoSuperior<br>             Prazo inscrição: 10/07/2024             </div>`)[0];
+                popup_ee7e2a09c4cf69228bdc198e2a3a3304.setContent(html_333f03bfac485c0260bc74fb7913ed7b);
+            
+        
+
+        marker_4ff63eca883cb81a734ce5a554978d47.bindPopup(popup_ee7e2a09c4cf69228bdc198e2a3a3304)
+        ;
+
+        
+    
+    
+            var marker_dca1dd721f3c526a66f526f76dd4d49b = L.marker(
+                [-18.08639, -39.55083],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3a6e71777879a653c07d1d5d99f57800 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2cbdb97beb11a5bd2b73ccc78fe05c45 = $(`<div id="html_2cbdb97beb11a5bd2b73ccc78fe05c45" style="width: 100.0%; height: 100.0%;">             <b>UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri</b><br>             Instituição: UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri<br>             Vagas: 13 vagas até R$ 6356,02Professores SubstitutosSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_3a6e71777879a653c07d1d5d99f57800.setContent(html_2cbdb97beb11a5bd2b73ccc78fe05c45);
+            
+        
+
+        marker_dca1dd721f3c526a66f526f76dd4d49b.bindPopup(popup_3a6e71777879a653c07d1d5d99f57800)
+        ;
+
+        
+    
+    
+            var marker_79aeb44b41cfeb6a3ebd71494f21e0ca = L.marker(
+                [-21.4194352, -45.98363494659432],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_23750251dc814133e6b9d97e29935172 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_add1e32f0238185571e4fe88df8e40f7 = $(`<div id="html_add1e32f0238185571e4fe88df8e40f7" style="width: 100.0%; height: 100.0%;">             <b>UNIFAL - Universidade Federal de Alfenas</b><br>             Instituição: UNIFAL - Universidade Federal de Alfenas<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: Reaberto até26/06/2024             </div>`)[0];
+                popup_23750251dc814133e6b9d97e29935172.setContent(html_add1e32f0238185571e4fe88df8e40f7);
+            
+        
+
+        marker_79aeb44b41cfeb6a3ebd71494f21e0ca.bindPopup(popup_23750251dc814133e6b9d97e29935172)
+        ;
+
+        
+    
+    
+            var marker_3a4ead9e1f50a422b15763c44426d33e = L.marker(
+                [-22.4238234, -45.4524156],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3e307842704343e75b2ccd4bf78b0dd1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_75bb23722be91f6ee81c3a2d569bd520 = $(`<div id="html_75bb23722be91f6ee81c3a2d569bd520" style="width: 100.0%; height: 100.0%;">             <b>UNIFEI - Universidade Federal de Itajubá</b><br>             Instituição: UNIFEI - Universidade Federal de Itajubá<br>             Vagas: 2 vagas até R$ 9616,18Professor de Magistério SuperiorSuperior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_3e307842704343e75b2ccd4bf78b0dd1.setContent(html_75bb23722be91f6ee81c3a2d569bd520);
+            
+        
+
+        marker_3a4ead9e1f50a422b15763c44426d33e.bindPopup(popup_3e307842704343e75b2ccd4bf78b0dd1)
+        ;
+
+        
+    
+    
+            var marker_eeab80210704039bf7ec1b0f3af23e91 = L.marker(
+                [-21.88778, -42.70444],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_7d4450e1d567dd045e8be9e73ff07dea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9c0a6012bed90cb5181806351d816fb7 = $(`<div id="html_9c0a6012bed90cb5181806351d816fb7" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Além Paraíba</b><br>             Instituição: Prefeitura de Além Paraíba<br>             Vagas: 211 vagas até R$ 2597,08Vários CargosMédio / Magistério / Superior<br>             Prazo inscrição: 01/08/2024             </div>`)[0];
+                popup_7d4450e1d567dd045e8be9e73ff07dea.setContent(html_9c0a6012bed90cb5181806351d816fb7);
+            
+        
+
+        marker_eeab80210704039bf7ec1b0f3af23e91.bindPopup(popup_7d4450e1d567dd045e8be9e73ff07dea)
+        ;
+
+        
+    
+    
+            var marker_f85711b39422cf5a941604bfab59f452 = L.marker(
+                [-17.70306, -40.76639],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_741a1364da93ce1fba2d1d0ade10bc94 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac9ca9582c48415621da458cfebc3bb1 = $(`<div id="html_ac9ca9582c48415621da458cfebc3bb1" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Carlos Chagas</b><br>             Instituição: Prefeitura de Carlos Chagas<br>             Vagas: 126 vagas até R$ 9165,66Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Reaberto até21/06/2024             </div>`)[0];
+                popup_741a1364da93ce1fba2d1d0ade10bc94.setContent(html_ac9ca9582c48415621da458cfebc3bb1);
+            
+        
+
+        marker_f85711b39422cf5a941604bfab59f452.bindPopup(popup_741a1364da93ce1fba2d1d0ade10bc94)
+        ;
+
+        
+    
+    
+            var marker_e506120d5ee4ca5d2094f5fd19ef8abd = L.marker(
+                [-20.1700751, -44.9108216],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_c89720947d7bc9c07327d109543e1c9d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e99203a9d453c2eaa3cd0f4e502715fa = $(`<div id="html_e99203a9d453c2eaa3cd0f4e502715fa" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Divinópolis</b><br>             Instituição: Prefeitura de Divinópolis<br>             Vagas: 1426 vagas até R$ 12.862,27Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 05/08 a09/09/2024             </div>`)[0];
+                popup_c89720947d7bc9c07327d109543e1c9d.setContent(html_e99203a9d453c2eaa3cd0f4e502715fa);
+            
+        
+
+        marker_e506120d5ee4ca5d2094f5fd19ef8abd.bindPopup(popup_c89720947d7bc9c07327d109543e1c9d)
+        ;
+
+        
+    
+    
+            var marker_7aad00f49db0cb8697b278e4698f8cf2 = L.marker(
+                [-20.0217985, -44.0675057],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_6a687ac34bfc5c09e988128ffe96dcb4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_263aef5fc2799d9e1b949a3b2d7d77da = $(`<div id="html_263aef5fc2799d9e1b949a3b2d7d77da" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Ibirité</b><br>             Instituição: Prefeitura de Ibirité<br>             Vagas: 1401 vagas até R$ 16.690,91Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 24/06 a24/07/2024             </div>`)[0];
+                popup_6a687ac34bfc5c09e988128ffe96dcb4.setContent(html_263aef5fc2799d9e1b949a3b2d7d77da);
+            
+        
+
+        marker_7aad00f49db0cb8697b278e4698f8cf2.bindPopup(popup_6a687ac34bfc5c09e988128ffe96dcb4)
+        ;
+
+        
+    
+    
+            var marker_d8b692f59c04a9130e41ecfc1edcc9dc = L.marker(
+                [-21.1991486, -42.6129577],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_00d01002a28e7e76f154e5a42c3df404 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c63d649cc26524c09e191189812898ea = $(`<div id="html_c63d649cc26524c09e191189812898ea" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Miraí</b><br>             Instituição: Prefeitura de Miraí<br>             Vagas: 40 vagas até R$ 6906,51Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 18/06 a18/07/2024             </div>`)[0];
+                popup_00d01002a28e7e76f154e5a42c3df404.setContent(html_c63d649cc26524c09e191189812898ea);
+            
+        
+
+        marker_d8b692f59c04a9130e41ecfc1edcc9dc.bindPopup(popup_00d01002a28e7e76f154e5a42c3df404)
+        ;
+
+        
+    
+    
+            var marker_9b018db6af146a5db6c82c2ffb810c5d = L.marker(
+                [-16.730794, -43.8705351],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3079260ad58c5229aa152c4e6cbced66 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c749d0e9777e924f1166cf348c32a0e4 = $(`<div id="html_c749d0e9777e924f1166cf348c32a0e4" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Montes Claros</b><br>             Instituição: Prefeitura de Montes Claros<br>             Vagas: 1.753 vagas até R$ 5905,02Vários CargosMédio / Técnico / Superior<br>             Prazo inscrição: 01 a31/07/2024             </div>`)[0];
+                popup_3079260ad58c5229aa152c4e6cbced66.setContent(html_c749d0e9777e924f1166cf348c32a0e4);
+            
+        
+
+        marker_9b018db6af146a5db6c82c2ffb810c5d.bindPopup(popup_3079260ad58c5229aa152c4e6cbced66)
+        ;
+
+        
+    
+    
+            var marker_1ff5004f5ef93c0880c4c539e04500f7 = L.marker(
+                [-21.36762015, -46.52269794689623],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_c18d2a0e8e35ab6f58e8ea6470452e73 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fee729833abe7a46e14866917c0d51a3 = $(`<div id="html_fee729833abe7a46e14866917c0d51a3" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Muzambinho</b><br>             Instituição: Prefeitura de Muzambinho<br>             Vagas: 286 vagas até R$ 20.175,68Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 17/06/2024             </div>`)[0];
+                popup_c18d2a0e8e35ab6f58e8ea6470452e73.setContent(html_fee729833abe7a46e14866917c0d51a3);
+            
+        
+
+        marker_1ff5004f5ef93c0880c4c539e04500f7.bindPopup(popup_c18d2a0e8e35ab6f58e8ea6470452e73)
+        ;
+
+        
+    
+    
+            var marker_5f40e07171ae99376142d149650c42f4 = L.marker(
+                [-19.9854675, -43.84742750922619],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_48e8b05b54317f5d9bfec5570543b12a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f5509a846659143c80fe575b581c4e1d = $(`<div id="html_f5509a846659143c80fe575b581c4e1d" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Nova Lima</b><br>             Instituição: Prefeitura de Nova Lima<br>             Vagas: 203 vagas até R$ 3315,72Vários CargosMédio / Superior<br>             Prazo inscrição: 22/07 a22/08/2024             </div>`)[0];
+                popup_48e8b05b54317f5d9bfec5570543b12a.setContent(html_f5509a846659143c80fe575b581c4e1d);
+            
+        
+
+        marker_5f40e07171ae99376142d149650c42f4.bindPopup(popup_48e8b05b54317f5d9bfec5570543b12a)
+        ;
+
+        
+    
+    
+            var marker_718c9dfa6d23c2901c0c108fcda1155b = L.marker(
+                [-20.04917, -44.27389],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_2cb9115fc96fcfd9401f1cbcc9a65314 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_20c691facfae10d17ac25b2843ac7b31 = $(`<div id="html_20c691facfae10d17ac25b2843ac7b31" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura São Joaquim de Bicas</b><br>             Instituição: Prefeitura São Joaquim de Bicas<br>             Vagas: 368 vagas até R$ 4.862,60Vários CargosFundamental Incompleto / Médio / Superior<br>             Prazo inscrição: 16/07/2024             </div>`)[0];
+                popup_2cb9115fc96fcfd9401f1cbcc9a65314.setContent(html_20c691facfae10d17ac25b2843ac7b31);
+            
+        
+
+        marker_718c9dfa6d23c2901c0c108fcda1155b.bindPopup(popup_2cb9115fc96fcfd9401f1cbcc9a65314)
+        ;
+
+        
+    
+    
+            var marker_6b7e1631afb4b2cf19397f058d748695 = L.marker(
+                [-18.0, -44.0],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_888b6dec94e91c67b0f634536d280f66 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d7cab2e63db09c2bf79f6a6f066c7b69 = $(`<div id="html_d7cab2e63db09c2bf79f6a6f066c7b69" style="width: 100.0%; height: 100.0%;">             <b>CEFET - Centro Federal de Educação Tecnológica de Minas Gerais</b><br>             Instituição: CEFET - Centro Federal de Educação Tecnológica de Minas Gerais<br>             Vagas: 2 vagasProfessor SubstitutoSuperior<br>             Prazo inscrição: 23/06/2024             </div>`)[0];
+                popup_888b6dec94e91c67b0f634536d280f66.setContent(html_d7cab2e63db09c2bf79f6a6f066c7b69);
+            
+        
+
+        marker_6b7e1631afb4b2cf19397f058d748695.bindPopup(popup_888b6dec94e91c67b0f634536d280f66)
+        ;
+
+        
+    
+    
+            var marker_0475ade8df13aec51c48c12e4ae17fb5 = L.marker(
+                [-21.275, -43.178889],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_dea4e1666cdbf8efc9b1c2f08d192c1a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ca337788a1cf2e3a4a5f84a73d1c701 = $(`<div id="html_4ca337788a1cf2e3a4a5f84a73d1c701" style="width: 100.0%; height: 100.0%;">             <b>IF Sudeste - Instituto Federal de Educação, Ciência e Tecnologia - Rio Pomba</b><br>             Instituição: IF Sudeste - Instituto Federal de Educação, Ciência e Tecnologia - Rio Pomba<br>             Vagas: 1 vaga até R$ 6.356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_dea4e1666cdbf8efc9b1c2f08d192c1a.setContent(html_4ca337788a1cf2e3a4a5f84a73d1c701);
+            
+        
+
+        marker_0475ade8df13aec51c48c12e4ae17fb5.bindPopup(popup_dea4e1666cdbf8efc9b1c2f08d192c1a)
+        ;
+
+        
+    
+    
+            var marker_0d7f032ecc1615f2017aab8b29bdb19d = L.marker(
+                [-16.7273538, -43.8717676],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_4c53ffc30cda9a16af55a6869170e212 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d414ca385df21deca6023e8ceaa493b = $(`<div id="html_6d414ca385df21deca6023e8ceaa493b" style="width: 100.0%; height: 100.0%;">             <b>IFNMG - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFNMG - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 32 vagas até R$ 10.481,64ProfessorSuperior<br>             Prazo inscrição: 09/07/2024             </div>`)[0];
+                popup_4c53ffc30cda9a16af55a6869170e212.setContent(html_6d414ca385df21deca6023e8ceaa493b);
+            
+        
+
+        marker_0d7f032ecc1615f2017aab8b29bdb19d.bindPopup(popup_4c53ffc30cda9a16af55a6869170e212)
+        ;
+
+        
+    
+    
+            var marker_7a1210ac116d7590af4a2180ee4a0ee8 = L.marker(
+                [-22.2343858, -45.9327241],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_e96f4630300b10c32a26a68c17bc8604 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0a3301b4495696c2063a30b7c24ba20 = $(`<div id="html_b0a3301b4495696c2063a30b7c24ba20" style="width: 100.0%; height: 100.0%;">             <b>IFSULDEMINAS - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFSULDEMINAS - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 27/06/2024             </div>`)[0];
+                popup_e96f4630300b10c32a26a68c17bc8604.setContent(html_b0a3301b4495696c2063a30b7c24ba20);
+            
+        
+
+        marker_7a1210ac116d7590af4a2180ee4a0ee8.bindPopup(popup_e96f4630300b10c32a26a68c17bc8604)
+        ;
+
+        
+    
+    
+            var marker_45d52885721726fee2d8cb9608752b4d = L.marker(
+                [-9.9722485, -49.0401245],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_c6d19b858d37446a992a69ba2f3f3306 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb89023ba72d25af2af4b84fdb658bbf = $(`<div id="html_fb89023ba72d25af2af4b84fdb658bbf" style="width: 100.0%; height: 100.0%;">             <b>IFTM - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFTM - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_c6d19b858d37446a992a69ba2f3f3306.setContent(html_fb89023ba72d25af2af4b84fdb658bbf);
+            
+        
+
+        marker_45d52885721726fee2d8cb9608752b4d.bindPopup(popup_c6d19b858d37446a992a69ba2f3f3306)
+        ;
+
+        
+    
+    
+            var marker_f1b33545142af460d0008cff6d55cd7c = L.marker(
+                [-20.96959, -45.41717],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_b80585c07dcab014260564e2c2f71b03 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88a46b21083bf5eb805491b4daed3162 = $(`<div id="html_88a46b21083bf5eb805491b4daed3162" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Aguanil</b><br>             Instituição: Prefeitura de Aguanil<br>             Vagas: 57 vagas até R$ 4902,24Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: conferir período por cargo07/08 a05/09/2024             </div>`)[0];
+                popup_b80585c07dcab014260564e2c2f71b03.setContent(html_88a46b21083bf5eb805491b4daed3162);
+            
+        
+
+        marker_f1b33545142af460d0008cff6d55cd7c.bindPopup(popup_b80585c07dcab014260564e2c2f71b03)
+        ;
+
+        
+    
+    
+            var marker_71641a0f0a84952868a6f15dd2b5fe71 = L.marker(
+                [-20.28534905, -45.540429335458484],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3d8a11c250b867e1e08994698a67dd58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2fded0773653987ad0b013a8cc4727c1 = $(`<div id="html_2fded0773653987ad0b013a8cc4727c1" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Buritis</b><br>             Instituição: Prefeitura de Buritis<br>             Vagas: 523 vagas até R$ 7170,46Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 29/07 a29/08/2024             </div>`)[0];
+                popup_3d8a11c250b867e1e08994698a67dd58.setContent(html_2fded0773653987ad0b013a8cc4727c1);
+            
+        
+
+        marker_71641a0f0a84952868a6f15dd2b5fe71.bindPopup(popup_3d8a11c250b867e1e08994698a67dd58)
+        ;
+
+        
+    
+    
+            var marker_0f8edcdda801255d0bfda8e519a8a497 = L.marker(
+                [-22.3554043, -45.7796324],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_0a8935398c1b87b916397bc39aadb625 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0adcba3e0cbd2a130c116c218ed6bd4 = $(`<div id="html_d0adcba3e0cbd2a130c116c218ed6bd4" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Cachoeira de Minas</b><br>             Instituição: Prefeitura de Cachoeira de Minas<br>             Vagas: 131 vagas até R$ 4038,85Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 26/06/2024             </div>`)[0];
+                popup_0a8935398c1b87b916397bc39aadb625.setContent(html_d0adcba3e0cbd2a130c116c218ed6bd4);
+            
+        
+
+        marker_0f8edcdda801255d0bfda8e519a8a497.bindPopup(popup_0a8935398c1b87b916397bc39aadb625)
+        ;
+
+        
+    
+    
+            var marker_895cdf43f4f3757ec892ae1b9ea9512a = L.marker(
+                [-21.7875, -45.67156],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_8bd51e54d92b5507350dde78912acd56 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e695488c198605d51b9bf05768559d78 = $(`<div id="html_e695488c198605d51b9bf05768559d78" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Cordislândia</b><br>             Instituição: Prefeitura de Cordislândia<br>             Vagas: 91 vagas até R$ 4313,28Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_8bd51e54d92b5507350dde78912acd56.setContent(html_e695488c198605d51b9bf05768559d78);
+            
+        
+
+        marker_895cdf43f4f3757ec892ae1b9ea9512a.bindPopup(popup_8bd51e54d92b5507350dde78912acd56)
+        ;
+
+        
+    
+    
+            var marker_208110f25472eebd88aa10e3aef268f0 = L.marker(
+                [-20.45029, -45.53592],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_20529aa23318a448469312df4a67943c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_edfcbba3ec3b124b4c7eadc23139dc2e = $(`<div id="html_edfcbba3ec3b124b4c7eadc23139dc2e" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Córrego Fundo</b><br>             Instituição: Prefeitura de Córrego Fundo<br>             Vagas: 34 vagas até R$ 5082,79Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_20529aa23318a448469312df4a67943c.setContent(html_edfcbba3ec3b124b4c7eadc23139dc2e);
+            
+        
+
+        marker_208110f25472eebd88aa10e3aef268f0.bindPopup(popup_20529aa23318a448469312df4a67943c)
+        ;
+
+        
+    
+    
+            var marker_cad620d3d40c5f8acac2024f7dd39e1a = L.marker(
+                [-14.204023150000001, -41.66983489657876],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_9edfee445853923014e8db012c51f26f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6db4873ccea0221ee00f6c7957d05d1f = $(`<div id="html_6db4873ccea0221ee00f6c7957d05d1f" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Esmeraldas</b><br>             Instituição: Prefeitura de Esmeraldas<br>             Vagas: 156 vagas até R$ 3099,51Vários CargosFundamental / Médio / Superior<br>             Prazo inscrição: 19/07 a20/08/2024             </div>`)[0];
+                popup_9edfee445853923014e8db012c51f26f.setContent(html_6db4873ccea0221ee00f6c7957d05d1f);
+            
+        
+
+        marker_cad620d3d40c5f8acac2024f7dd39e1a.bindPopup(popup_9edfee445853923014e8db012c51f26f)
+        ;
+
+        
+    
+    
+            var marker_87635966b5ec39b8c05705db6ac2e54f = L.marker(
+                [-14.92611, -42.81917],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_f7a71201c2220bb928f2984bea1ddf36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_077b8dbaabbc96fc4021040ace673d14 = $(`<div id="html_077b8dbaabbc96fc4021040ace673d14" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Espinosa</b><br>             Instituição: Prefeitura de Espinosa<br>             Vagas: 538 vagas até R$ 5.500,00Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/08 a05/09/2024             </div>`)[0];
+                popup_f7a71201c2220bb928f2984bea1ddf36.setContent(html_077b8dbaabbc96fc4021040ace673d14);
+            
+        
+
+        marker_87635966b5ec39b8c05705db6ac2e54f.bindPopup(popup_f7a71201c2220bb928f2984bea1ddf36)
+        ;
+
+        
+    
+    
+            var marker_22e470d938e7ae46552191caa943e580 = L.marker(
+                [-20.01198215, -45.98014148874536],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_2fa35d550b23ba8be4ebfc21dbedb21e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98fda01ef7b32e0b1b892179e9e5cec4 = $(`<div id="html_98fda01ef7b32e0b1b892179e9e5cec4" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Formiga</b><br>             Instituição: Prefeitura de Formiga<br>             Vagas: Vagas até R$ 4580,57Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Superior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_2fa35d550b23ba8be4ebfc21dbedb21e.setContent(html_98fda01ef7b32e0b1b892179e9e5cec4);
+            
+        
+
+        marker_22e470d938e7ae46552191caa943e580.bindPopup(popup_2fa35d550b23ba8be4ebfc21dbedb21e)
+        ;
+
+        
+    
+    
+            var marker_5253ce8198e74b8fa861632879719080 = L.marker(
+                [-20.5718037, -43.0057078],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_f7e6132c1ae6ab68e92e598c43be88b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d805aceed2ff4fc30fda6b8133d849b = $(`<div id="html_2d805aceed2ff4fc30fda6b8133d849b" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Guaraciaba</b><br>             Instituição: Prefeitura de Guaraciaba<br>             Vagas: 157 vagas até R$ 13.439,17Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/06/2024             </div>`)[0];
+                popup_f7e6132c1ae6ab68e92e598c43be88b0.setContent(html_2d805aceed2ff4fc30fda6b8133d849b);
+            
+        
+
+        marker_5253ce8198e74b8fa861632879719080.bindPopup(popup_f7e6132c1ae6ab68e92e598c43be88b0)
+        ;
+
+        
+    
+    
+            var marker_5c55f526febe5fc1c9b23b1e92c56c14 = L.marker(
+                [-21.07628295, -47.04753900305222],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d17b479b62ccb1bc53699e95285e6a6d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d7cba852fb3dbb0d1ac20f909af7bdf = $(`<div id="html_6d7cba852fb3dbb0d1ac20f909af7bdf" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itamogi</b><br>             Instituição: Prefeitura de Itamogi<br>             Vagas: 40 vagas até R$ 7802,98Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Apenas para alguns cargos24/06/2024             </div>`)[0];
+                popup_d17b479b62ccb1bc53699e95285e6a6d.setContent(html_6d7cba852fb3dbb0d1ac20f909af7bdf);
+            
+        
+
+        marker_5c55f526febe5fc1c9b23b1e92c56c14.bindPopup(popup_d17b479b62ccb1bc53699e95285e6a6d)
+        ;
+
+        
+    
+    
+            var marker_4c5adfa021353c28c243edf1ce75585b = L.marker(
+                [-19.1713581, -41.86345075],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_abb0a67adcd08115e22aec736d1d099f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e146fa31cf5bc42fce1a37a475e49b46 = $(`<div id="html_e146fa31cf5bc42fce1a37a475e49b46" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itanhomi</b><br>             Instituição: Prefeitura de Itanhomi<br>             Vagas: 134 vagas até R$ 4747,49Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Reaberto até07/06/2024             </div>`)[0];
+                popup_abb0a67adcd08115e22aec736d1d099f.setContent(html_e146fa31cf5bc42fce1a37a475e49b46);
+            
+        
+
+        marker_4c5adfa021353c28c243edf1ce75585b.bindPopup(popup_abb0a67adcd08115e22aec736d1d099f)
+        ;
+
+        
+    
+    
+            var marker_4b880d704a19a8ddb50600fc3b657b2b = L.marker(
+                [-16.5625458, -41.5001952],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_b77351ae0577d2fa6690f73c775dbb5e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3e7b014bdb978407f24fc77031bbfeea = $(`<div id="html_3e7b014bdb978407f24fc77031bbfeea" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itaobim</b><br>             Instituição: Prefeitura de Itaobim<br>             Vagas: 15 vagas até R$ 4.198,24Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 02/09 a02/10/2024             </div>`)[0];
+                popup_b77351ae0577d2fa6690f73c775dbb5e.setContent(html_3e7b014bdb978407f24fc77031bbfeea);
+            
+        
+
+        marker_4b880d704a19a8ddb50600fc3b657b2b.bindPopup(popup_b77351ae0577d2fa6690f73c775dbb5e)
+        ;
+
+        
+    
+    
+            var marker_9e3b226de0ef272efad3709eb0a0555f = L.marker(
+                [-18.7829469, -40.9816691],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_cf152851bd5cc663d33566576111f4a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff898276b7f241c5aa43637914038eaf = $(`<div id="html_ff898276b7f241c5aa43637914038eaf" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Mantena</b><br>             Instituição: Prefeitura de Mantena<br>             Vagas: 211 vagas até R$ 10.054,00Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 24/06 a25/07/2024             </div>`)[0];
+                popup_cf152851bd5cc663d33566576111f4a2.setContent(html_ff898276b7f241c5aa43637914038eaf);
+            
+        
+
+        marker_9e3b226de0ef272efad3709eb0a0555f.bindPopup(popup_cf152851bd5cc663d33566576111f4a2)
+        ;
+
+        
+    
+    
+            var marker_8ab846e79833e6963dc2f4c7aa3b17ee = L.marker(
+                [-20.078985, -41.1229622],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_deafbc796bf65fa00bb4ae56c6237cb5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1339c763d3374af66677a57e3df2da75 = $(`<div id="html_1339c763d3374af66677a57e3df2da75" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Maria da Fé</b><br>             Instituição: Prefeitura de Maria da Fé<br>             Vagas: 102 vagas até R$ 4297,26Vários CargosFundamental Incompleto / Fundamental / Médio / Superior<br>             Prazo inscrição: 05/08 a02/09/2024             </div>`)[0];
+                popup_deafbc796bf65fa00bb4ae56c6237cb5.setContent(html_1339c763d3374af66677a57e3df2da75);
+            
+        
+
+        marker_8ab846e79833e6963dc2f4c7aa3b17ee.bindPopup(popup_deafbc796bf65fa00bb4ae56c6237cb5)
+        ;
+
+        
+    
+    
+            var marker_43407064f189abe5f79b96d5be6dc9e6 = L.marker(
+                [-17.217649, -42.5948565],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_8b86b6d319db85356a3f54a19ed3e3a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_42eb1aa09fe244e111649692dbaabb52 = $(`<div id="html_42eb1aa09fe244e111649692dbaabb52" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Minas Novas</b><br>             Instituição: Prefeitura de Minas Novas<br>             Vagas: 239 vagas até R$ 16.593,60Vários CargosAlfabetizado / Médio / Técnico / Superior<br>             Prazo inscrição: 27/06/2024             </div>`)[0];
+                popup_8b86b6d319db85356a3f54a19ed3e3a3.setContent(html_42eb1aa09fe244e111649692dbaabb52);
+            
+        
+
+        marker_43407064f189abe5f79b96d5be6dc9e6.bindPopup(popup_8b86b6d319db85356a3f54a19ed3e3a3)
+        ;
+
+        
+    
+    
+            var marker_17b2d3237f59f8d0db24dd933d8abb13 = L.marker(
+                [-21.62972, -43.01972],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_85e60eff2a8090e4191a52b6d1807233 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64cf70b4d6e83f6f872124f5493cfced = $(`<div id="html_64cf70b4d6e83f6f872124f5493cfced" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Rochedo de Minas</b><br>             Instituição: Prefeitura de Rochedo de Minas<br>             Vagas: 1 vaga até R$ 25,45 h/aProfessor Municipal II - GeografiaSuperior<br>             Prazo inscrição: 20 a21/06/2024             </div>`)[0];
+                popup_85e60eff2a8090e4191a52b6d1807233.setContent(html_64cf70b4d6e83f6f872124f5493cfced);
+            
+        
+
+        marker_17b2d3237f59f8d0db24dd933d8abb13.bindPopup(popup_85e60eff2a8090e4191a52b6d1807233)
+        ;
+
+        
+    
+    
+            var marker_98c7d26be713abb9095612244fbaed89 = L.marker(
+                [-18.29694, -44.22306],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_01626bfc3adcab526d80cb072805fbf7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7fbc9dbc08e18db93caab80b8fe9018 = $(`<div id="html_e7fbc9dbc08e18db93caab80b8fe9018" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Santo Hipólito</b><br>             Instituição: Prefeitura de Santo Hipólito<br>             Vagas: 64 vagas até R$ 3410,58Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 22/07 a19/08/2024             </div>`)[0];
+                popup_01626bfc3adcab526d80cb072805fbf7.setContent(html_e7fbc9dbc08e18db93caab80b8fe9018);
+            
+        
+
+        marker_98c7d26be713abb9095612244fbaed89.bindPopup(popup_01626bfc3adcab526d80cb072805fbf7)
+        ;
+
+        
+    
+    
+            var marker_8e31264d35c9dce2dfc4decc750370f1 = L.marker(
+                [-20.77276365, -41.67754875503177],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_4c2aa88e611789f76e5cbf3bef34fa9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c5ea27da7771aa205e09df8f881b12f4 = $(`<div id="html_c5ea27da7771aa205e09df8f881b12f4" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São Francisco do Glória</b><br>             Instituição: Prefeitura de São Francisco do Glória<br>             Vagas: 9 vagas até R$ 3345,59Professores de Apoio à Educação EspecialSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_4c2aa88e611789f76e5cbf3bef34fa9f.setContent(html_c5ea27da7771aa205e09df8f881b12f4);
+            
+        
+
+        marker_8e31264d35c9dce2dfc4decc750370f1.bindPopup(popup_4c2aa88e611789f76e5cbf3bef34fa9f)
+        ;
+
+        
+    
+    
+            var marker_cc2c2288f31dc9fca02e05d973030201 = L.marker(
+                [-19.98278, -44.85889],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_e301294c831079957f6b77e5f4225db1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f961ed8842603e48992b105be263e9f6 = $(`<div id="html_f961ed8842603e48992b105be263e9f6" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São Gonçalo do Pará</b><br>             Instituição: Prefeitura de São Gonçalo do Pará<br>             Vagas: 180 vagas até R$ 6258,63Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/08 a06/09/2024             </div>`)[0];
+                popup_e301294c831079957f6b77e5f4225db1.setContent(html_f961ed8842603e48992b105be263e9f6);
+            
+        
+
+        marker_cc2c2288f31dc9fca02e05d973030201.bindPopup(popup_e301294c831079957f6b77e5f4225db1)
+        ;
+
+        
+    
+    
+            var marker_4364dfe10819d1a6f2f53f433cdabb6b = L.marker(
+                [-20.39361, -42.15139],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_9ae796c1fc970206499f224510562c6e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82573f8c5ea5a15d1313ff1b58915a52 = $(`<div id="html_82573f8c5ea5a15d1313ff1b58915a52" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São João do Manhuaçu</b><br>             Instituição: Prefeitura de São João do Manhuaçu<br>             Vagas: 171 vagas até R$ 15.000,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 13/06/2024             </div>`)[0];
+                popup_9ae796c1fc970206499f224510562c6e.setContent(html_82573f8c5ea5a15d1313ff1b58915a52);
+            
+        
+
+        marker_4364dfe10819d1a6f2f53f433cdabb6b.bindPopup(popup_9ae796c1fc970206499f224510562c6e)
+        ;
+
+        
+    
+    
+            var marker_8aff257bc103fb011a45e8cfd3ed599c = L.marker(
+                [-18.72599, -41.1609051],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_55b863b7c2e5e3d0331e83560827d233 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_db58f96f17f62ef809cc64493371fc8c = $(`<div id="html_db58f96f17f62ef809cc64493371fc8c" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São João do Manteninha</b><br>             Instituição: Prefeitura de São João do Manteninha<br>             Vagas: 31 vagas até R$ 3.313,58Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 08/07 a06/08/2024             </div>`)[0];
+                popup_55b863b7c2e5e3d0331e83560827d233.setContent(html_db58f96f17f62ef809cc64493371fc8c);
+            
+        
+
+        marker_8aff257bc103fb011a45e8cfd3ed599c.bindPopup(popup_55b863b7c2e5e3d0331e83560827d233)
+        ;
+
+        
+    
+    
+            var marker_83beea2b3f8180931947b8534de1ccf9 = L.marker(
+                [-20.00528, -41.74472],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_419cc93d4d23926c4fb23ac369c5e96f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1aa5af817a7a1c792cc96cf3a10cfb96 = $(`<div id="html_1aa5af817a7a1c792cc96cf3a10cfb96" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São José do Mantimento</b><br>             Instituição: Prefeitura de São José do Mantimento<br>             Vagas: 123 vagas até R$ 13.000,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 12/08 a12/09/2024             </div>`)[0];
+                popup_419cc93d4d23926c4fb23ac369c5e96f.setContent(html_1aa5af817a7a1c792cc96cf3a10cfb96);
+            
+        
+
+        marker_83beea2b3f8180931947b8534de1ccf9.bindPopup(popup_419cc93d4d23926c4fb23ac369c5e96f)
+        ;
+
+        
+    
+    
+            var marker_958aa8a6f65525d38f2b918745c4ce14 = L.marker(
+                [-20.03528, -44.14472],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_797dcd2b625ec8e5203f5e659b04f3ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd23eb22875e7609c602c42d1dff156d = $(`<div id="html_bd23eb22875e7609c602c42d1dff156d" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Sarzedo</b><br>             Instituição: Prefeitura de Sarzedo<br>             Vagas: 20 vagas até R$ 3865,96Vários CargosMédio / Superior<br>             Prazo inscrição: 22/07 a21/08/2024             </div>`)[0];
+                popup_797dcd2b625ec8e5203f5e659b04f3ad.setContent(html_bd23eb22875e7609c602c42d1dff156d);
+            
+        
+
+        marker_958aa8a6f65525d38f2b918745c4ce14.bindPopup(popup_797dcd2b625ec8e5203f5e659b04f3ad)
+        ;
+
+        
+    
+    
+            var marker_695b18164f6400cabd9911a7415bf898 = L.marker(
+                [-18.8925327, -43.0841377],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_bb3349bb7a1c54e7af374e6a57376fec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c535b8ff638751a36880da34f574faf3 = $(`<div id="html_c535b8ff638751a36880da34f574faf3" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Senhora do Porto</b><br>             Instituição: Prefeitura de Senhora do Porto<br>             Vagas: 63 vagas até R$ 4259,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 12/08 a11/09/2024             </div>`)[0];
+                popup_bb3349bb7a1c54e7af374e6a57376fec.setContent(html_c535b8ff638751a36880da34f574faf3);
+            
+        
+
+        marker_695b18164f6400cabd9911a7415bf898.bindPopup(popup_bb3349bb7a1c54e7af374e6a57376fec)
+        ;
+
+        
+    
+    
+            var marker_9ae436cd1f9e401498122005bb20030e = L.marker(
+                [-18.8216658, -42.7044396],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_f161348aefd030b0a18bb28ad57a42be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b548753f6104a9f3f8b7bb92e8ef6748 = $(`<div id="html_b548753f6104a9f3f8b7bb92e8ef6748" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Virginópolis</b><br>             Instituição: Prefeitura de Virginópolis<br>             Vagas: 115 vagas até R$ 4641,60Vários CargosMédio / Magistério / Técnico / Superior<br>             Prazo inscrição: Prorrogado até11/07/2024             </div>`)[0];
+                popup_f161348aefd030b0a18bb28ad57a42be.setContent(html_b548753f6104a9f3f8b7bb92e8ef6748);
+            
+        
+
+        marker_9ae436cd1f9e401498122005bb20030e.bindPopup(popup_f161348aefd030b0a18bb28ad57a42be)
+        ;
+
+        
+    
+    
+            var marker_14ff9df37fb83c57494021ac8e48468d = L.marker(
+                [-21.123937249999997, -42.918594514198794],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_41e047ed124c65c84c869f6030e9e243 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca8f2cd2e0e8b0dd80e3e2a32fff6c05 = $(`<div id="html_ca8f2cd2e0e8b0dd80e3e2a32fff6c05" style="width: 100.0%; height: 100.0%;">             <b>UEMG - Universidade do Estado de Minas Gerais</b><br>             Instituição: UEMG - Universidade do Estado de Minas Gerais<br>             Vagas: 57 vagas até R$ 7488,46Professores de Magistério SuperiorSuperior<br>             Prazo inscrição: 15 a30/07/2024             </div>`)[0];
+                popup_41e047ed124c65c84c869f6030e9e243.setContent(html_ca8f2cd2e0e8b0dd80e3e2a32fff6c05);
+            
+        
+
+        marker_14ff9df37fb83c57494021ac8e48468d.bindPopup(popup_41e047ed124c65c84c869f6030e9e243)
+        ;
+
+        
+    
+    
+            var marker_c71098d054ecc287f5c63a510698ea34 = L.marker(
+                [-21.77690665, -43.36916061596831],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_08b2de00957bb8f839cac4087e86d2ef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6db6d94f3945a7cacdb9c788ed689c9e = $(`<div id="html_6db6d94f3945a7cacdb9c788ed689c9e" style="width: 100.0%; height: 100.0%;">             <b>UFJF - Universidade Federal de Juiz de Fora</b><br>             Instituição: UFJF - Universidade Federal de Juiz de Fora<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 18/06/2024             </div>`)[0];
+                popup_08b2de00957bb8f839cac4087e86d2ef.setContent(html_6db6d94f3945a7cacdb9c788ed689c9e);
+            
+        
+
+        marker_c71098d054ecc287f5c63a510698ea34.bindPopup(popup_08b2de00957bb8f839cac4087e86d2ef)
+        ;
+
+        
+    
+    
+            var marker_5d2837777b6c1ac20ac7830ba64e66b5 = L.marker(
+                [-21.77690665, -43.36916061596831],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_465609a34c10e8b09ef22fca7116d219 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cd0992e8287c7660ca7a5e1c6b5f19a2 = $(`<div id="html_cd0992e8287c7660ca7a5e1c6b5f19a2" style="width: 100.0%; height: 100.0%;">             <b>UFJF - Universidade Federal de Juiz de Fora - Juiz de Fora</b><br>             Instituição: UFJF - Universidade Federal de Juiz de Fora - Juiz de Fora<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 18/06/2024             </div>`)[0];
+                popup_465609a34c10e8b09ef22fca7116d219.setContent(html_cd0992e8287c7660ca7a5e1c6b5f19a2);
+            
+        
+
+        marker_5d2837777b6c1ac20ac7830ba64e66b5.bindPopup(popup_465609a34c10e8b09ef22fca7116d219)
+        ;
+
+        
+    
+    
+            var marker_a97440a4f3ba842e84a4ec63e6783642 = L.marker(
+                [-19.87317625, -43.97385326636239],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_084b96b52dab0bbb9a80f0c589c5c355 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a6af652649dc6ca05315b8c501d50ec = $(`<div id="html_4a6af652649dc6ca05315b8c501d50ec" style="width: 100.0%; height: 100.0%;">             <b>UFMG - Universidade Federal de Minas Gerais</b><br>             Instituição: UFMG - Universidade Federal de Minas Gerais<br>             Vagas: 3 vagas até R$ 10.481,64Professor do Magistério SuperiorSuperior<br>             Prazo inscrição: 12/08/2024             </div>`)[0];
+                popup_084b96b52dab0bbb9a80f0c589c5c355.setContent(html_4a6af652649dc6ca05315b8c501d50ec);
+            
+        
+
+        marker_a97440a4f3ba842e84a4ec63e6783642.bindPopup(popup_084b96b52dab0bbb9a80f0c589c5c355)
+        ;
+
+        
+    
+    
+            var marker_faa13b21d96616e115c5fbe4ad6c2df5 = L.marker(
+                [-20.76763505, -42.858785454528096],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_dec60cc56242680928ed19f684f455eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5dbda427bb773a8fc0585025513f31b5 = $(`<div id="html_5dbda427bb773a8fc0585025513f31b5" style="width: 100.0%; height: 100.0%;">             <b>UFV - Universidade Federal de Viçosa</b><br>             Instituição: UFV - Universidade Federal de Viçosa<br>             Vagas: 1 vagaProfessor AdjuntoSuperior<br>             Prazo inscrição: 10/07/2024             </div>`)[0];
+                popup_dec60cc56242680928ed19f684f455eb.setContent(html_5dbda427bb773a8fc0585025513f31b5);
+            
+        
+
+        marker_faa13b21d96616e115c5fbe4ad6c2df5.bindPopup(popup_dec60cc56242680928ed19f684f455eb)
+        ;
+
+        
+    
+    
+            var marker_6271fd4e973d1b10fbf900eaf0e0b410 = L.marker(
+                [-18.08639, -39.55083],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_09fd4cb1df88518449986624f2562d5d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_254104286bf838891e5eac01499dc382 = $(`<div id="html_254104286bf838891e5eac01499dc382" style="width: 100.0%; height: 100.0%;">             <b>UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri</b><br>             Instituição: UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri<br>             Vagas: 13 vagas até R$ 6356,02Professores SubstitutosSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_09fd4cb1df88518449986624f2562d5d.setContent(html_254104286bf838891e5eac01499dc382);
+            
+        
+
+        marker_6271fd4e973d1b10fbf900eaf0e0b410.bindPopup(popup_09fd4cb1df88518449986624f2562d5d)
+        ;
+
+        
+    
+    
+            var marker_92044da97b5f45896f8649db25f2fa39 = L.marker(
+                [-21.4194352, -45.98363494659432],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_bdf1551aec410761169fb52f1761d59d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19d52003906878287fce0a523c49e9cf = $(`<div id="html_19d52003906878287fce0a523c49e9cf" style="width: 100.0%; height: 100.0%;">             <b>UNIFAL - Universidade Federal de Alfenas</b><br>             Instituição: UNIFAL - Universidade Federal de Alfenas<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: Reaberto até26/06/2024             </div>`)[0];
+                popup_bdf1551aec410761169fb52f1761d59d.setContent(html_19d52003906878287fce0a523c49e9cf);
+            
+        
+
+        marker_92044da97b5f45896f8649db25f2fa39.bindPopup(popup_bdf1551aec410761169fb52f1761d59d)
+        ;
+
+        
+    
+    
+            var marker_071031295ae972abd146e8100d6aa59e = L.marker(
+                [-22.4238234, -45.4524156],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_69729af9a9c5262a48511d5fdec3ffc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_978506fe4d1c96305cbc9b63c6ff692d = $(`<div id="html_978506fe4d1c96305cbc9b63c6ff692d" style="width: 100.0%; height: 100.0%;">             <b>UNIFEI - Universidade Federal de Itajubá</b><br>             Instituição: UNIFEI - Universidade Federal de Itajubá<br>             Vagas: 2 vagas até R$ 9616,18Professor de Magistério SuperiorSuperior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_69729af9a9c5262a48511d5fdec3ffc6.setContent(html_978506fe4d1c96305cbc9b63c6ff692d);
+            
+        
+
+        marker_071031295ae972abd146e8100d6aa59e.bindPopup(popup_69729af9a9c5262a48511d5fdec3ffc6)
+        ;
+
+        
+    
+    
+            var marker_b8d87615b8f2dc5398fa0ea913d116ce = L.marker(
+                [-21.88778, -42.70444],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_962eda2e5213dfd069377112bbb04812 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_133a5510bb5b597a613e6a27dd5e83af = $(`<div id="html_133a5510bb5b597a613e6a27dd5e83af" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Além Paraíba</b><br>             Instituição: Prefeitura de Além Paraíba<br>             Vagas: 211 vagas até R$ 2597,08Vários CargosMédio / Magistério / Superior<br>             Prazo inscrição: 01/08/2024             </div>`)[0];
+                popup_962eda2e5213dfd069377112bbb04812.setContent(html_133a5510bb5b597a613e6a27dd5e83af);
+            
+        
+
+        marker_b8d87615b8f2dc5398fa0ea913d116ce.bindPopup(popup_962eda2e5213dfd069377112bbb04812)
+        ;
+
+        
+    
+    
+            var marker_8532ad6361c329b0992a3cfce6d3efce = L.marker(
+                [-17.70306, -40.76639],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_b877e7863dabed19da648739a3285089 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f96115c61dbd8fdd55a26ad1df57250 = $(`<div id="html_9f96115c61dbd8fdd55a26ad1df57250" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Carlos Chagas</b><br>             Instituição: Prefeitura de Carlos Chagas<br>             Vagas: 126 vagas até R$ 9165,66Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Reaberto até21/06/2024             </div>`)[0];
+                popup_b877e7863dabed19da648739a3285089.setContent(html_9f96115c61dbd8fdd55a26ad1df57250);
+            
+        
+
+        marker_8532ad6361c329b0992a3cfce6d3efce.bindPopup(popup_b877e7863dabed19da648739a3285089)
+        ;
+
+        
+    
+    
+            var marker_0e787109556077ded3121ec201990489 = L.marker(
+                [-20.1700751, -44.9108216],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_2b04363eff095a68378e79c94c708b9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6fc1f36d13a4adebc48b929ed4b14fb = $(`<div id="html_d6fc1f36d13a4adebc48b929ed4b14fb" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Divinópolis</b><br>             Instituição: Prefeitura de Divinópolis<br>             Vagas: 1426 vagas até R$ 12.862,27Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 05/08 a09/09/2024             </div>`)[0];
+                popup_2b04363eff095a68378e79c94c708b9a.setContent(html_d6fc1f36d13a4adebc48b929ed4b14fb);
+            
+        
+
+        marker_0e787109556077ded3121ec201990489.bindPopup(popup_2b04363eff095a68378e79c94c708b9a)
+        ;
+
+        
+    
+    
+            var marker_59e53a4954b436fbc9a524bba820297c = L.marker(
+                [-20.0217985, -44.0675057],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_7e4ae4e4131fb71e93aceba97afa533a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcbd7bb7556a098e14991fe9a0ff1b0a = $(`<div id="html_dcbd7bb7556a098e14991fe9a0ff1b0a" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Ibirité</b><br>             Instituição: Prefeitura de Ibirité<br>             Vagas: 1401 vagas até R$ 16.690,91Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 24/06 a24/07/2024             </div>`)[0];
+                popup_7e4ae4e4131fb71e93aceba97afa533a.setContent(html_dcbd7bb7556a098e14991fe9a0ff1b0a);
+            
+        
+
+        marker_59e53a4954b436fbc9a524bba820297c.bindPopup(popup_7e4ae4e4131fb71e93aceba97afa533a)
+        ;
+
+        
+    
+    
+            var marker_fe721769db424dd41d8f94d4563e148b = L.marker(
+                [-21.1991486, -42.6129577],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d283aaa557b162a3ebfebd77f2556e61 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f9dffe447b703143e20599f85705207a = $(`<div id="html_f9dffe447b703143e20599f85705207a" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Miraí</b><br>             Instituição: Prefeitura de Miraí<br>             Vagas: 40 vagas até R$ 6906,51Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 18/06 a18/07/2024             </div>`)[0];
+                popup_d283aaa557b162a3ebfebd77f2556e61.setContent(html_f9dffe447b703143e20599f85705207a);
+            
+        
+
+        marker_fe721769db424dd41d8f94d4563e148b.bindPopup(popup_d283aaa557b162a3ebfebd77f2556e61)
+        ;
+
+        
+    
+    
+            var marker_29d2d86a6352926d18b91b526d9feb8a = L.marker(
+                [-16.730794, -43.8705351],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_19706c5aef8e20905cc5806853e4d0f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2529d4e8d6795d1127f59b2ed60bd2d3 = $(`<div id="html_2529d4e8d6795d1127f59b2ed60bd2d3" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Montes Claros</b><br>             Instituição: Prefeitura de Montes Claros<br>             Vagas: 1.753 vagas até R$ 5905,02Vários CargosMédio / Técnico / Superior<br>             Prazo inscrição: 01 a31/07/2024             </div>`)[0];
+                popup_19706c5aef8e20905cc5806853e4d0f6.setContent(html_2529d4e8d6795d1127f59b2ed60bd2d3);
+            
+        
+
+        marker_29d2d86a6352926d18b91b526d9feb8a.bindPopup(popup_19706c5aef8e20905cc5806853e4d0f6)
+        ;
+
+        
+    
+    
+            var marker_dc3ff4e786f8e2779b63e785632d6ca5 = L.marker(
+                [-21.36762015, -46.52269794689623],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_ddcafe1594a6545c1a4f88c29bd835bd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_25d1df0d5f49b87647cb68961837cf44 = $(`<div id="html_25d1df0d5f49b87647cb68961837cf44" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Muzambinho</b><br>             Instituição: Prefeitura de Muzambinho<br>             Vagas: 286 vagas até R$ 20.175,68Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 17/06/2024             </div>`)[0];
+                popup_ddcafe1594a6545c1a4f88c29bd835bd.setContent(html_25d1df0d5f49b87647cb68961837cf44);
+            
+        
+
+        marker_dc3ff4e786f8e2779b63e785632d6ca5.bindPopup(popup_ddcafe1594a6545c1a4f88c29bd835bd)
+        ;
+
+        
+    
+    
+            var marker_d5054670bafd0c55d781ebd9dc8b68ba = L.marker(
+                [-19.9854675, -43.84742750922619],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_857f8d5b5ea5fda75c68bb69f83be53a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_92365f5b0313a48ea2e79de10d281bc5 = $(`<div id="html_92365f5b0313a48ea2e79de10d281bc5" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Nova Lima</b><br>             Instituição: Prefeitura de Nova Lima<br>             Vagas: 203 vagas até R$ 3315,72Vários CargosMédio / Superior<br>             Prazo inscrição: 22/07 a22/08/2024             </div>`)[0];
+                popup_857f8d5b5ea5fda75c68bb69f83be53a.setContent(html_92365f5b0313a48ea2e79de10d281bc5);
+            
+        
+
+        marker_d5054670bafd0c55d781ebd9dc8b68ba.bindPopup(popup_857f8d5b5ea5fda75c68bb69f83be53a)
+        ;
+
+        
+    
+    
+            var marker_fe35864478eaeb9eed511bbcb899510c = L.marker(
+                [-20.04917, -44.27389],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_f87bc54e505141aaa2905f55512bbad4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f523fb6a4da853a8e10f0eb86ef5e673 = $(`<div id="html_f523fb6a4da853a8e10f0eb86ef5e673" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura São Joaquim de Bicas</b><br>             Instituição: Prefeitura São Joaquim de Bicas<br>             Vagas: 368 vagas até R$ 4.862,60Vários CargosFundamental Incompleto / Médio / Superior<br>             Prazo inscrição: 16/07/2024             </div>`)[0];
+                popup_f87bc54e505141aaa2905f55512bbad4.setContent(html_f523fb6a4da853a8e10f0eb86ef5e673);
+            
+        
+
+        marker_fe35864478eaeb9eed511bbcb899510c.bindPopup(popup_f87bc54e505141aaa2905f55512bbad4)
+        ;
+
+        
+    
+    
+            var marker_d35af876a6a1daa6912da8cb279ae122 = L.marker(
+                [-18.0, -44.0],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_c9288a1df54eadda2d9bce04724bd92a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9df0b73cfef47ff5c343e97c9eb8eb20 = $(`<div id="html_9df0b73cfef47ff5c343e97c9eb8eb20" style="width: 100.0%; height: 100.0%;">             <b>CEFET - Centro Federal de Educação Tecnológica de Minas Gerais</b><br>             Instituição: CEFET - Centro Federal de Educação Tecnológica de Minas Gerais<br>             Vagas: 2 vagasProfessor SubstitutoSuperior<br>             Prazo inscrição: 23/06/2024             </div>`)[0];
+                popup_c9288a1df54eadda2d9bce04724bd92a.setContent(html_9df0b73cfef47ff5c343e97c9eb8eb20);
+            
+        
+
+        marker_d35af876a6a1daa6912da8cb279ae122.bindPopup(popup_c9288a1df54eadda2d9bce04724bd92a)
+        ;
+
+        
+    
+    
+            var marker_b50172caa4807aa4bee7d0d2f86e5644 = L.marker(
+                [-21.275, -43.178889],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_395e474834789943f79e6061bbf50cd0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_735f440be0f2c67b10ebd41be1bc0016 = $(`<div id="html_735f440be0f2c67b10ebd41be1bc0016" style="width: 100.0%; height: 100.0%;">             <b>IF Sudeste - Instituto Federal de Educação, Ciência e Tecnologia - Rio Pomba</b><br>             Instituição: IF Sudeste - Instituto Federal de Educação, Ciência e Tecnologia - Rio Pomba<br>             Vagas: 1 vaga até R$ 6.356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_395e474834789943f79e6061bbf50cd0.setContent(html_735f440be0f2c67b10ebd41be1bc0016);
+            
+        
+
+        marker_b50172caa4807aa4bee7d0d2f86e5644.bindPopup(popup_395e474834789943f79e6061bbf50cd0)
+        ;
+
+        
+    
+    
+            var marker_4edf8b8d0b748d792cbae709ea3319f1 = L.marker(
+                [-16.7273538, -43.8717676],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_61ff88deb34720348910d33925d19b1f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd0da0815593a8d8ac725a3513bf5763 = $(`<div id="html_dd0da0815593a8d8ac725a3513bf5763" style="width: 100.0%; height: 100.0%;">             <b>IFNMG - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFNMG - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 32 vagas até R$ 10.481,64ProfessorSuperior<br>             Prazo inscrição: 09/07/2024             </div>`)[0];
+                popup_61ff88deb34720348910d33925d19b1f.setContent(html_dd0da0815593a8d8ac725a3513bf5763);
+            
+        
+
+        marker_4edf8b8d0b748d792cbae709ea3319f1.bindPopup(popup_61ff88deb34720348910d33925d19b1f)
+        ;
+
+        
+    
+    
+            var marker_104b71101d5c4493ce359649e0157f73 = L.marker(
+                [-22.2343858, -45.9327241],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_fa328e1a3b08c9f3df715b97f7154384 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f953f33e975110bd83e3199c1bb8562b = $(`<div id="html_f953f33e975110bd83e3199c1bb8562b" style="width: 100.0%; height: 100.0%;">             <b>IFSULDEMINAS - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFSULDEMINAS - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 27/06/2024             </div>`)[0];
+                popup_fa328e1a3b08c9f3df715b97f7154384.setContent(html_f953f33e975110bd83e3199c1bb8562b);
+            
+        
+
+        marker_104b71101d5c4493ce359649e0157f73.bindPopup(popup_fa328e1a3b08c9f3df715b97f7154384)
+        ;
+
+        
+    
+    
+            var marker_f9e8e5a06c974e0d0f63969fe1eb2d47 = L.marker(
+                [-9.9722485, -49.0401245],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_b5f65d42b81c522f2bc27725a9d90d89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3433cd1672cbdff68ce15cb1256d78c8 = $(`<div id="html_3433cd1672cbdff68ce15cb1256d78c8" style="width: 100.0%; height: 100.0%;">             <b>IFTM - Instituto Federal de Educação, Ciência e Tecnologia</b><br>             Instituição: IFTM - Instituto Federal de Educação, Ciência e Tecnologia<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_b5f65d42b81c522f2bc27725a9d90d89.setContent(html_3433cd1672cbdff68ce15cb1256d78c8);
+            
+        
+
+        marker_f9e8e5a06c974e0d0f63969fe1eb2d47.bindPopup(popup_b5f65d42b81c522f2bc27725a9d90d89)
+        ;
+
+        
+    
+    
+            var marker_db1897974a846dfa2defacb4034bd69e = L.marker(
+                [-20.96959, -45.41717],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_00c8f32a79de998153b1222580996424 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e580a93d59e58248b13915eeafa9086 = $(`<div id="html_6e580a93d59e58248b13915eeafa9086" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Aguanil</b><br>             Instituição: Prefeitura de Aguanil<br>             Vagas: 57 vagas até R$ 4902,24Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: conferir período por cargo07/08 a05/09/2024             </div>`)[0];
+                popup_00c8f32a79de998153b1222580996424.setContent(html_6e580a93d59e58248b13915eeafa9086);
+            
+        
+
+        marker_db1897974a846dfa2defacb4034bd69e.bindPopup(popup_00c8f32a79de998153b1222580996424)
+        ;
+
+        
+    
+    
+            var marker_6b037709ea920d4800327d3e3788b8a5 = L.marker(
+                [-20.28534905, -45.540429335458484],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d46ff31418068c84264bfcf1c352a232 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8dbf0ed4a46ae89bb738051c2dde9ec = $(`<div id="html_e8dbf0ed4a46ae89bb738051c2dde9ec" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Buritis</b><br>             Instituição: Prefeitura de Buritis<br>             Vagas: 523 vagas até R$ 7170,46Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 29/07 a29/08/2024             </div>`)[0];
+                popup_d46ff31418068c84264bfcf1c352a232.setContent(html_e8dbf0ed4a46ae89bb738051c2dde9ec);
+            
+        
+
+        marker_6b037709ea920d4800327d3e3788b8a5.bindPopup(popup_d46ff31418068c84264bfcf1c352a232)
+        ;
+
+        
+    
+    
+            var marker_b6a23f107e7809e99413a93a0eb7735d = L.marker(
+                [-22.3554043, -45.7796324],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_20e42041b2eb14bff59a92f3eed3c978 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_92b69f2a7cba44903774518a36e52d50 = $(`<div id="html_92b69f2a7cba44903774518a36e52d50" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Cachoeira de Minas</b><br>             Instituição: Prefeitura de Cachoeira de Minas<br>             Vagas: 131 vagas até R$ 4038,85Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 26/06/2024             </div>`)[0];
+                popup_20e42041b2eb14bff59a92f3eed3c978.setContent(html_92b69f2a7cba44903774518a36e52d50);
+            
+        
+
+        marker_b6a23f107e7809e99413a93a0eb7735d.bindPopup(popup_20e42041b2eb14bff59a92f3eed3c978)
+        ;
+
+        
+    
+    
+            var marker_3c66f4059af99f89fe309c187ee7bbb4 = L.marker(
+                [-21.7875, -45.67156],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_8951009898f6e38b7b93fd349a3ca662 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a1561806c67eed2581f7a9984436a466 = $(`<div id="html_a1561806c67eed2581f7a9984436a466" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Cordislândia</b><br>             Instituição: Prefeitura de Cordislândia<br>             Vagas: 91 vagas até R$ 4313,28Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_8951009898f6e38b7b93fd349a3ca662.setContent(html_a1561806c67eed2581f7a9984436a466);
+            
+        
+
+        marker_3c66f4059af99f89fe309c187ee7bbb4.bindPopup(popup_8951009898f6e38b7b93fd349a3ca662)
+        ;
+
+        
+    
+    
+            var marker_b6e4d200fcdfb81ee6798498b3bda4f7 = L.marker(
+                [-20.45029, -45.53592],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_420587cd3f4178ede51fd07c3d7e5213 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c874ba67a1b1f4886d1c3296ab5868e2 = $(`<div id="html_c874ba67a1b1f4886d1c3296ab5868e2" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Córrego Fundo</b><br>             Instituição: Prefeitura de Córrego Fundo<br>             Vagas: 34 vagas até R$ 5082,79Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_420587cd3f4178ede51fd07c3d7e5213.setContent(html_c874ba67a1b1f4886d1c3296ab5868e2);
+            
+        
+
+        marker_b6e4d200fcdfb81ee6798498b3bda4f7.bindPopup(popup_420587cd3f4178ede51fd07c3d7e5213)
+        ;
+
+        
+    
+    
+            var marker_8bb47c1476efac883f17f3ad21cb2354 = L.marker(
+                [-14.204023150000001, -41.66983489657876],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_c6631f3cb90c6b740b5fa5eb2f852e6a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cd61d9b480766d881e47845644532d71 = $(`<div id="html_cd61d9b480766d881e47845644532d71" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Esmeraldas</b><br>             Instituição: Prefeitura de Esmeraldas<br>             Vagas: 156 vagas até R$ 3099,51Vários CargosFundamental / Médio / Superior<br>             Prazo inscrição: 19/07 a20/08/2024             </div>`)[0];
+                popup_c6631f3cb90c6b740b5fa5eb2f852e6a.setContent(html_cd61d9b480766d881e47845644532d71);
+            
+        
+
+        marker_8bb47c1476efac883f17f3ad21cb2354.bindPopup(popup_c6631f3cb90c6b740b5fa5eb2f852e6a)
+        ;
+
+        
+    
+    
+            var marker_7ccc0bffba76ab1ca1b733c74c1c2f8d = L.marker(
+                [-14.92611, -42.81917],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_0db07836a414120dafd5594f94df3e56 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f0c993b706794907b74631e6bf88738d = $(`<div id="html_f0c993b706794907b74631e6bf88738d" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Espinosa</b><br>             Instituição: Prefeitura de Espinosa<br>             Vagas: 538 vagas até R$ 5.500,00Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/08 a05/09/2024             </div>`)[0];
+                popup_0db07836a414120dafd5594f94df3e56.setContent(html_f0c993b706794907b74631e6bf88738d);
+            
+        
+
+        marker_7ccc0bffba76ab1ca1b733c74c1c2f8d.bindPopup(popup_0db07836a414120dafd5594f94df3e56)
+        ;
+
+        
+    
+    
+            var marker_abe03ac033894287fc6c8809ba94d0d7 = L.marker(
+                [-20.01198215, -45.98014148874536],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_a8d184f08e37e2bb8a3e14ac8ead88dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28cfe7eb775bc0d3fd8747068b7e1af6 = $(`<div id="html_28cfe7eb775bc0d3fd8747068b7e1af6" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Formiga</b><br>             Instituição: Prefeitura de Formiga<br>             Vagas: Vagas até R$ 4580,57Vários CargosAlfabetizado / Fundamental Incompleto / Fundamental / Médio / Superior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_a8d184f08e37e2bb8a3e14ac8ead88dd.setContent(html_28cfe7eb775bc0d3fd8747068b7e1af6);
+            
+        
+
+        marker_abe03ac033894287fc6c8809ba94d0d7.bindPopup(popup_a8d184f08e37e2bb8a3e14ac8ead88dd)
+        ;
+
+        
+    
+    
+            var marker_d1df586eaf7b8c10e54cb86d98cbabfe = L.marker(
+                [-20.5718037, -43.0057078],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_aef9fec555ab2f4a5782634bb07c94e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_814126d5e30045f3e6a13bdf14c9a027 = $(`<div id="html_814126d5e30045f3e6a13bdf14c9a027" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Guaraciaba</b><br>             Instituição: Prefeitura de Guaraciaba<br>             Vagas: 157 vagas até R$ 13.439,17Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/06/2024             </div>`)[0];
+                popup_aef9fec555ab2f4a5782634bb07c94e1.setContent(html_814126d5e30045f3e6a13bdf14c9a027);
+            
+        
+
+        marker_d1df586eaf7b8c10e54cb86d98cbabfe.bindPopup(popup_aef9fec555ab2f4a5782634bb07c94e1)
+        ;
+
+        
+    
+    
+            var marker_dfd74a100dae2f9407ff6f561f2b4306 = L.marker(
+                [-21.07628295, -47.04753900305222],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d32fbca019ef7d4a23cc075b02a3fb0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ad50bbf1d2af77dc4965064d974dac7 = $(`<div id="html_1ad50bbf1d2af77dc4965064d974dac7" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itamogi</b><br>             Instituição: Prefeitura de Itamogi<br>             Vagas: 40 vagas até R$ 7802,98Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Apenas para alguns cargos24/06/2024             </div>`)[0];
+                popup_d32fbca019ef7d4a23cc075b02a3fb0f.setContent(html_1ad50bbf1d2af77dc4965064d974dac7);
+            
+        
+
+        marker_dfd74a100dae2f9407ff6f561f2b4306.bindPopup(popup_d32fbca019ef7d4a23cc075b02a3fb0f)
+        ;
+
+        
+    
+    
+            var marker_0b7a8759a75e6f5b029ebad20cf5f6f0 = L.marker(
+                [-19.1713581, -41.86345075],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_b496e32652753952aea065f6367fd139 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8152dd752cb2c166aac18dcccddcb496 = $(`<div id="html_8152dd752cb2c166aac18dcccddcb496" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itanhomi</b><br>             Instituição: Prefeitura de Itanhomi<br>             Vagas: 134 vagas até R$ 4747,49Vários CargosFundamental Incompleto / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: Reaberto até07/06/2024             </div>`)[0];
+                popup_b496e32652753952aea065f6367fd139.setContent(html_8152dd752cb2c166aac18dcccddcb496);
+            
+        
+
+        marker_0b7a8759a75e6f5b029ebad20cf5f6f0.bindPopup(popup_b496e32652753952aea065f6367fd139)
+        ;
+
+        
+    
+    
+            var marker_bd51d7e36155542fae05c57644ec678b = L.marker(
+                [-16.5625458, -41.5001952],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_a5c2e608d575119927a01218c5cb085b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a48b3e1b3b6cdca3a8c7b52d86a5e242 = $(`<div id="html_a48b3e1b3b6cdca3a8c7b52d86a5e242" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Itaobim</b><br>             Instituição: Prefeitura de Itaobim<br>             Vagas: 15 vagas até R$ 4.198,24Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 02/09 a02/10/2024             </div>`)[0];
+                popup_a5c2e608d575119927a01218c5cb085b.setContent(html_a48b3e1b3b6cdca3a8c7b52d86a5e242);
+            
+        
+
+        marker_bd51d7e36155542fae05c57644ec678b.bindPopup(popup_a5c2e608d575119927a01218c5cb085b)
+        ;
+
+        
+    
+    
+            var marker_7058f1324f6395825ea652af2dced857 = L.marker(
+                [-18.7829469, -40.9816691],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_58bf22bf98951a4671a94889a5ce5ad1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_36a6a591227307f1081bde7211bd9030 = $(`<div id="html_36a6a591227307f1081bde7211bd9030" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Mantena</b><br>             Instituição: Prefeitura de Mantena<br>             Vagas: 211 vagas até R$ 10.054,00Vários CargosAlfabetizado / Fundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 24/06 a25/07/2024             </div>`)[0];
+                popup_58bf22bf98951a4671a94889a5ce5ad1.setContent(html_36a6a591227307f1081bde7211bd9030);
+            
+        
+
+        marker_7058f1324f6395825ea652af2dced857.bindPopup(popup_58bf22bf98951a4671a94889a5ce5ad1)
+        ;
+
+        
+    
+    
+            var marker_8acddfc17b29ad9739cb0af49f03ad72 = L.marker(
+                [-20.078985, -41.1229622],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_1e82b21fd6927582b822c20834efb4a5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_455c7fcb8affd7dc313bebadb32717ef = $(`<div id="html_455c7fcb8affd7dc313bebadb32717ef" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Maria da Fé</b><br>             Instituição: Prefeitura de Maria da Fé<br>             Vagas: 102 vagas até R$ 4297,26Vários CargosFundamental Incompleto / Fundamental / Médio / Superior<br>             Prazo inscrição: 05/08 a02/09/2024             </div>`)[0];
+                popup_1e82b21fd6927582b822c20834efb4a5.setContent(html_455c7fcb8affd7dc313bebadb32717ef);
+            
+        
+
+        marker_8acddfc17b29ad9739cb0af49f03ad72.bindPopup(popup_1e82b21fd6927582b822c20834efb4a5)
+        ;
+
+        
+    
+    
+            var marker_9d80458bc0f5197a544079802cdbf0b9 = L.marker(
+                [-17.217649, -42.5948565],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_e7b506dd492a2bc5699117664b4d92e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc872ca3e8ba69cc8f041309ba74f806 = $(`<div id="html_bc872ca3e8ba69cc8f041309ba74f806" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Minas Novas</b><br>             Instituição: Prefeitura de Minas Novas<br>             Vagas: 239 vagas até R$ 16.593,60Vários CargosAlfabetizado / Médio / Técnico / Superior<br>             Prazo inscrição: 27/06/2024             </div>`)[0];
+                popup_e7b506dd492a2bc5699117664b4d92e3.setContent(html_bc872ca3e8ba69cc8f041309ba74f806);
+            
+        
+
+        marker_9d80458bc0f5197a544079802cdbf0b9.bindPopup(popup_e7b506dd492a2bc5699117664b4d92e3)
+        ;
+
+        
+    
+    
+            var marker_1dfabba241a5de121044b2743452a07e = L.marker(
+                [-21.62972, -43.01972],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_fefbaeea62ef9086250e29c219d1fc65 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5fb69b6e078d4ed492d42ef1bfe2854b = $(`<div id="html_5fb69b6e078d4ed492d42ef1bfe2854b" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Rochedo de Minas</b><br>             Instituição: Prefeitura de Rochedo de Minas<br>             Vagas: 1 vaga até R$ 25,45 h/aProfessor Municipal II - GeografiaSuperior<br>             Prazo inscrição: 20 a21/06/2024             </div>`)[0];
+                popup_fefbaeea62ef9086250e29c219d1fc65.setContent(html_5fb69b6e078d4ed492d42ef1bfe2854b);
+            
+        
+
+        marker_1dfabba241a5de121044b2743452a07e.bindPopup(popup_fefbaeea62ef9086250e29c219d1fc65)
+        ;
+
+        
+    
+    
+            var marker_6a51e793fb0af02486a10015a66222a2 = L.marker(
+                [-18.29694, -44.22306],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_25794a721bce795005a059dabe39b3c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ac89500395d2df6ea05c9240f617e85 = $(`<div id="html_9ac89500395d2df6ea05c9240f617e85" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Santo Hipólito</b><br>             Instituição: Prefeitura de Santo Hipólito<br>             Vagas: 64 vagas até R$ 3410,58Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 22/07 a19/08/2024             </div>`)[0];
+                popup_25794a721bce795005a059dabe39b3c4.setContent(html_9ac89500395d2df6ea05c9240f617e85);
+            
+        
+
+        marker_6a51e793fb0af02486a10015a66222a2.bindPopup(popup_25794a721bce795005a059dabe39b3c4)
+        ;
+
+        
+    
+    
+            var marker_c823bc11413bc2edf63f6f40f60f41dc = L.marker(
+                [-20.77276365, -41.67754875503177],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_cfe9c80547cd1db339ef1f7286564249 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bdd34052fe1fed4f3e399cb007b306ae = $(`<div id="html_bdd34052fe1fed4f3e399cb007b306ae" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São Francisco do Glória</b><br>             Instituição: Prefeitura de São Francisco do Glória<br>             Vagas: 9 vagas até R$ 3345,59Professores de Apoio à Educação EspecialSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_cfe9c80547cd1db339ef1f7286564249.setContent(html_bdd34052fe1fed4f3e399cb007b306ae);
+            
+        
+
+        marker_c823bc11413bc2edf63f6f40f60f41dc.bindPopup(popup_cfe9c80547cd1db339ef1f7286564249)
+        ;
+
+        
+    
+    
+            var marker_8f38a251aae0e7c89db55dc0a71e1982 = L.marker(
+                [-19.98278, -44.85889],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_4f68d13fbf0dab26a2524c79e259f1db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6b34c318ff39177638ac7160e514c39 = $(`<div id="html_d6b34c318ff39177638ac7160e514c39" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São Gonçalo do Pará</b><br>             Instituição: Prefeitura de São Gonçalo do Pará<br>             Vagas: 180 vagas até R$ 6258,63Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 07/08 a06/09/2024             </div>`)[0];
+                popup_4f68d13fbf0dab26a2524c79e259f1db.setContent(html_d6b34c318ff39177638ac7160e514c39);
+            
+        
+
+        marker_8f38a251aae0e7c89db55dc0a71e1982.bindPopup(popup_4f68d13fbf0dab26a2524c79e259f1db)
+        ;
+
+        
+    
+    
+            var marker_c986dde54d16bdc0102816a463185b67 = L.marker(
+                [-20.39361, -42.15139],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3d8e70987330bead9a33085ee647a2ff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f1cc20b3185cfd6d77db617815c4fe3 = $(`<div id="html_8f1cc20b3185cfd6d77db617815c4fe3" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São João do Manhuaçu</b><br>             Instituição: Prefeitura de São João do Manhuaçu<br>             Vagas: 171 vagas até R$ 15.000,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 13/06/2024             </div>`)[0];
+                popup_3d8e70987330bead9a33085ee647a2ff.setContent(html_8f1cc20b3185cfd6d77db617815c4fe3);
+            
+        
+
+        marker_c986dde54d16bdc0102816a463185b67.bindPopup(popup_3d8e70987330bead9a33085ee647a2ff)
+        ;
+
+        
+    
+    
+            var marker_a7a13e501f6d63edb9d4a79b03ea03d4 = L.marker(
+                [-18.72599, -41.1609051],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_86fba6d80c4efee3e4a3c4b7fe0cae92 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47a04bcf7d4ca6a95c21543aef6fd926 = $(`<div id="html_47a04bcf7d4ca6a95c21543aef6fd926" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São João do Manteninha</b><br>             Instituição: Prefeitura de São João do Manteninha<br>             Vagas: 31 vagas até R$ 3.313,58Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 08/07 a06/08/2024             </div>`)[0];
+                popup_86fba6d80c4efee3e4a3c4b7fe0cae92.setContent(html_47a04bcf7d4ca6a95c21543aef6fd926);
+            
+        
+
+        marker_a7a13e501f6d63edb9d4a79b03ea03d4.bindPopup(popup_86fba6d80c4efee3e4a3c4b7fe0cae92)
+        ;
+
+        
+    
+    
+            var marker_f8b26cecb8dfb6de466b112e5c29924e = L.marker(
+                [-20.00528, -41.74472],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_ede4dc2dd6eae4964c14e586f710339c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_959d1c2005991082c1684919982ef24e = $(`<div id="html_959d1c2005991082c1684919982ef24e" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de São José do Mantimento</b><br>             Instituição: Prefeitura de São José do Mantimento<br>             Vagas: 123 vagas até R$ 13.000,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 12/08 a12/09/2024             </div>`)[0];
+                popup_ede4dc2dd6eae4964c14e586f710339c.setContent(html_959d1c2005991082c1684919982ef24e);
+            
+        
+
+        marker_f8b26cecb8dfb6de466b112e5c29924e.bindPopup(popup_ede4dc2dd6eae4964c14e586f710339c)
+        ;
+
+        
+    
+    
+            var marker_1007018034f9f78ad08d74f2c452496e = L.marker(
+                [-20.03528, -44.14472],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_d2aafbca617d015025d44a8f6c0ac568 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3dfadf314c70c86d16ac0249b78ba60c = $(`<div id="html_3dfadf314c70c86d16ac0249b78ba60c" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Sarzedo</b><br>             Instituição: Prefeitura de Sarzedo<br>             Vagas: 20 vagas até R$ 3865,96Vários CargosMédio / Superior<br>             Prazo inscrição: 22/07 a21/08/2024             </div>`)[0];
+                popup_d2aafbca617d015025d44a8f6c0ac568.setContent(html_3dfadf314c70c86d16ac0249b78ba60c);
+            
+        
+
+        marker_1007018034f9f78ad08d74f2c452496e.bindPopup(popup_d2aafbca617d015025d44a8f6c0ac568)
+        ;
+
+        
+    
+    
+            var marker_abfc110c36ac22b083bd513b15b035cd = L.marker(
+                [-18.8925327, -43.0841377],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_5f99ffd462decdb1da68e81d65e564a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4f3039fe5ae366851c88e68c0c0ee55 = $(`<div id="html_b4f3039fe5ae366851c88e68c0c0ee55" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Senhora do Porto</b><br>             Instituição: Prefeitura de Senhora do Porto<br>             Vagas: 63 vagas até R$ 4259,00Vários CargosFundamental / Médio / Técnico / Superior<br>             Prazo inscrição: 12/08 a11/09/2024             </div>`)[0];
+                popup_5f99ffd462decdb1da68e81d65e564a6.setContent(html_b4f3039fe5ae366851c88e68c0c0ee55);
+            
+        
+
+        marker_abfc110c36ac22b083bd513b15b035cd.bindPopup(popup_5f99ffd462decdb1da68e81d65e564a6)
+        ;
+
+        
+    
+    
+            var marker_067ea34997d2a2c7be74c3c2b1cfd74f = L.marker(
+                [-18.8216658, -42.7044396],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3ff9163dc567ddbe545be36ac59af0da = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6688e39dcc88ba9149c5e005969f9a9 = $(`<div id="html_e6688e39dcc88ba9149c5e005969f9a9" style="width: 100.0%; height: 100.0%;">             <b>Prefeitura de Virginópolis</b><br>             Instituição: Prefeitura de Virginópolis<br>             Vagas: 115 vagas até R$ 4641,60Vários CargosMédio / Magistério / Técnico / Superior<br>             Prazo inscrição: Prorrogado até11/07/2024             </div>`)[0];
+                popup_3ff9163dc567ddbe545be36ac59af0da.setContent(html_e6688e39dcc88ba9149c5e005969f9a9);
+            
+        
+
+        marker_067ea34997d2a2c7be74c3c2b1cfd74f.bindPopup(popup_3ff9163dc567ddbe545be36ac59af0da)
+        ;
+
+        
+    
+    
+            var marker_7b7f760ced82eba685b1659f985e302d = L.marker(
+                [-21.123937249999997, -42.918594514198794],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_fd189ffccddf4587ffacb1f35d7e5a81 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_826f8fb4b5aba7d7bf5d6ca477a48e97 = $(`<div id="html_826f8fb4b5aba7d7bf5d6ca477a48e97" style="width: 100.0%; height: 100.0%;">             <b>UEMG - Universidade do Estado de Minas Gerais</b><br>             Instituição: UEMG - Universidade do Estado de Minas Gerais<br>             Vagas: 57 vagas até R$ 7488,46Professores de Magistério SuperiorSuperior<br>             Prazo inscrição: 15 a30/07/2024             </div>`)[0];
+                popup_fd189ffccddf4587ffacb1f35d7e5a81.setContent(html_826f8fb4b5aba7d7bf5d6ca477a48e97);
+            
+        
+
+        marker_7b7f760ced82eba685b1659f985e302d.bindPopup(popup_fd189ffccddf4587ffacb1f35d7e5a81)
+        ;
+
+        
+    
+    
+            var marker_5652ee4d388a2dd6823383bdc42d2b6a = L.marker(
+                [-21.77690665, -43.36916061596831],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_bfad496aad7bde3c4c792e9755469c1d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1959d920ff6a06a4274280f89331b17c = $(`<div id="html_1959d920ff6a06a4274280f89331b17c" style="width: 100.0%; height: 100.0%;">             <b>UFJF - Universidade Federal de Juiz de Fora</b><br>             Instituição: UFJF - Universidade Federal de Juiz de Fora<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 18/06/2024             </div>`)[0];
+                popup_bfad496aad7bde3c4c792e9755469c1d.setContent(html_1959d920ff6a06a4274280f89331b17c);
+            
+        
+
+        marker_5652ee4d388a2dd6823383bdc42d2b6a.bindPopup(popup_bfad496aad7bde3c4c792e9755469c1d)
+        ;
+
+        
+    
+    
+            var marker_429bebcc749027e6da7bd239eabc11d9 = L.marker(
+                [-21.77690665, -43.36916061596831],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_9f0c2e3def999e1160b11798b048b5d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ea319af1ee2a65ae883cf37586d051b = $(`<div id="html_5ea319af1ee2a65ae883cf37586d051b" style="width: 100.0%; height: 100.0%;">             <b>UFJF - Universidade Federal de Juiz de Fora - Juiz de Fora</b><br>             Instituição: UFJF - Universidade Federal de Juiz de Fora - Juiz de Fora<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: 18/06/2024             </div>`)[0];
+                popup_9f0c2e3def999e1160b11798b048b5d7.setContent(html_5ea319af1ee2a65ae883cf37586d051b);
+            
+        
+
+        marker_429bebcc749027e6da7bd239eabc11d9.bindPopup(popup_9f0c2e3def999e1160b11798b048b5d7)
+        ;
+
+        
+    
+    
+            var marker_ee1bf65d8376b574d988842117f2c71d = L.marker(
+                [-19.87317625, -43.97385326636239],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_3ce49f98b0f4fd00a539cb281b87f7d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4cae15b591e9ba3037687ffddd84eda4 = $(`<div id="html_4cae15b591e9ba3037687ffddd84eda4" style="width: 100.0%; height: 100.0%;">             <b>UFMG - Universidade Federal de Minas Gerais</b><br>             Instituição: UFMG - Universidade Federal de Minas Gerais<br>             Vagas: 3 vagas até R$ 10.481,64Professor do Magistério SuperiorSuperior<br>             Prazo inscrição: 12/08/2024             </div>`)[0];
+                popup_3ce49f98b0f4fd00a539cb281b87f7d5.setContent(html_4cae15b591e9ba3037687ffddd84eda4);
+            
+        
+
+        marker_ee1bf65d8376b574d988842117f2c71d.bindPopup(popup_3ce49f98b0f4fd00a539cb281b87f7d5)
+        ;
+
+        
+    
+    
+            var marker_0fc8f1ab1a4c6245f46f771d4d9df173 = L.marker(
+                [-20.76763505, -42.858785454528096],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_568ff4f15b799bdc46e453ad6ed82bd8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cdbf4b05ac362c905a5cff993cd6299a = $(`<div id="html_cdbf4b05ac362c905a5cff993cd6299a" style="width: 100.0%; height: 100.0%;">             <b>UFV - Universidade Federal de Viçosa</b><br>             Instituição: UFV - Universidade Federal de Viçosa<br>             Vagas: 1 vagaProfessor AdjuntoSuperior<br>             Prazo inscrição: 10/07/2024             </div>`)[0];
+                popup_568ff4f15b799bdc46e453ad6ed82bd8.setContent(html_cdbf4b05ac362c905a5cff993cd6299a);
+            
+        
+
+        marker_0fc8f1ab1a4c6245f46f771d4d9df173.bindPopup(popup_568ff4f15b799bdc46e453ad6ed82bd8)
+        ;
+
+        
+    
+    
+            var marker_781b91c433db410c7b72ef451a4fab0e = L.marker(
+                [-18.08639, -39.55083],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_e158901d8e1c3537f74961ce0f9f8c23 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bd84d7e9f00ec437a185d21fc0fb3ca = $(`<div id="html_0bd84d7e9f00ec437a185d21fc0fb3ca" style="width: 100.0%; height: 100.0%;">             <b>UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri</b><br>             Instituição: UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri<br>             Vagas: 13 vagas até R$ 6356,02Professores SubstitutosSuperior<br>             Prazo inscrição: 19/06/2024             </div>`)[0];
+                popup_e158901d8e1c3537f74961ce0f9f8c23.setContent(html_0bd84d7e9f00ec437a185d21fc0fb3ca);
+            
+        
+
+        marker_781b91c433db410c7b72ef451a4fab0e.bindPopup(popup_e158901d8e1c3537f74961ce0f9f8c23)
+        ;
+
+        
+    
+    
+            var marker_f6e67285938e0503ce2ea8223da92fb6 = L.marker(
+                [-21.4194352, -45.98363494659432],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_f57cb7b9aed52bcdcede7c7a20a0bac4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_160129155dbe99892337aea5c88dff73 = $(`<div id="html_160129155dbe99892337aea5c88dff73" style="width: 100.0%; height: 100.0%;">             <b>UNIFAL - Universidade Federal de Alfenas</b><br>             Instituição: UNIFAL - Universidade Federal de Alfenas<br>             Vagas: 1 vaga até R$ 6356,02Professor SubstitutoSuperior<br>             Prazo inscrição: Reaberto até26/06/2024             </div>`)[0];
+                popup_f57cb7b9aed52bcdcede7c7a20a0bac4.setContent(html_160129155dbe99892337aea5c88dff73);
+            
+        
+
+        marker_f6e67285938e0503ce2ea8223da92fb6.bindPopup(popup_f57cb7b9aed52bcdcede7c7a20a0bac4)
+        ;
+
+        
+    
+    
+            var marker_51afdec790a4ddd4c9b13e833b700818 = L.marker(
+                [-22.4238234, -45.4524156],
+                {}
+            ).addTo(map_99ac8cb65672f68b3dae8565dcab9411);
+        
+    
+        var popup_375760f2349a7ba4226fe8fb9b32347c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed1b73bc11f54b9b63445cd09d1810a4 = $(`<div id="html_ed1b73bc11f54b9b63445cd09d1810a4" style="width: 100.0%; height: 100.0%;">             <b>UNIFEI - Universidade Federal de Itajubá</b><br>             Instituição: UNIFEI - Universidade Federal de Itajubá<br>             Vagas: 2 vagas até R$ 9616,18Professor de Magistério SuperiorSuperior<br>             Prazo inscrição: 20/06/2024             </div>`)[0];
+                popup_375760f2349a7ba4226fe8fb9b32347c.setContent(html_ed1b73bc11f54b9b63445cd09d1810a4);
+            
+        
+
+        marker_51afdec790a4ddd4c9b13e833b700818.bindPopup(popup_375760f2349a7ba4226fe8fb9b32347c)
+        ;
+
+        
+    
+</script>
+</html>
