@@ -4,6 +4,9 @@ import re
 import time
 import folium
 from datetime import datetime
+import os
+
+
 
 
 
@@ -523,7 +526,7 @@ if __name__ == "__main__":
     folium_map.get_root().html.add_child(folium.Element(button_html))
 
     # Save the map to an HTML file
-    map_filename = "map_of_institutions.html"
+    map_filename = "/home/ec2-user/concurso2024/Maps/map_of_institutions.html"
     folium_map.save(map_filename)
     print(f"Map saved as {map_filename}")
 
