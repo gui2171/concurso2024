@@ -77,7 +77,7 @@ def process_extracted_text(extracted_text):
 def search_address_by_name(name):
     try:
         # Search on Google
-        url = f"https://www.google.com/search?q=o CEP de é {name}"
+        url = f"https://www.google.com/search?q=o CEP de é SP {name}"
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
         response = requests.get(url, headers=headers)
         response.raise_for_status()
@@ -248,6 +248,7 @@ def get_coordinates_from_cep(cep):
         print(f"An error occurred during CEP to coordinates conversion: {e}")
         return None
 
+
 # Function to get coordinates from city name using a specific API
 # Function to get coordinates from city name using a specific API
 def get_coordinates_from_city(city_name):
@@ -281,6 +282,15 @@ def get_coordinates_from_city(city_name):
 def is_within_rs(lat, lon):
     """Check if the coordinates are within the geographical boundaries of Rio Grande do Sul."""
     return -24.0 <= lat <= -20.0 and -54.0 <= lon <= -44.0
+
+# Bounding box coordinates (replace with your actual bounding box)
+bounding_box = (-25.0, -19.0, -53.0, -45.0)  # Example bounding box
+
+# Function to validate if coordinates are within a specified bounding box
+def is_within_bounding_box(latitude, longitude, bbox):
+    """Check if a coordinate is within the bounding box."""
+    min_lat, min_lng, max_lat, max_lng = bbox
+    return min_lat <= latitude <= max_lat and min_lng <= longitude <= max_lng
 
 if __name__ == "__main__":
     # URL of the website to scrape
@@ -322,6 +332,7 @@ if __name__ == "__main__":
     start_time = time.time()  # Start time tracking
 
     # Loop through each institution in data_dict
+    # Loop through each institution in data_dict
     for key, value in data_dict.items():
         first_line = value.split('\n')[0]
         print(f"Searching for: {first_line}")
@@ -329,9 +340,8 @@ if __name__ == "__main__":
         coordinates = None
         method_tried = None
 
-        # Attempt to get coordinates using geocoding APIs with fallback to CEP lookup
+        # Try different geocoding services
         if not coordinates:
-            # Try Nominatim
             coordinates = get_coordinates_nominatim(first_line)
             method_tried = "Nominatim"
             if coordinates:
@@ -340,7 +350,6 @@ if __name__ == "__main__":
                 print(f"Coordinates not found using {method_tried} for: {first_line}")
 
         if not coordinates:
-            # Try OpenCage
             coordinates = get_coordinates_opencage(first_line, opencage_api_key)
             method_tried = "OpenCage"
             if coordinates:
@@ -349,7 +358,6 @@ if __name__ == "__main__":
                 print(f"Coordinates not found using {method_tried} for: {first_line}")
 
         if not coordinates:
-            # Try Google Maps
             coordinates = get_coordinates_google(first_line, google_api_key)
             method_tried = "Google Maps"
             if coordinates:
@@ -358,15 +366,14 @@ if __name__ == "__main__":
                 print(f"Coordinates not found using {method_tried} for: {first_line}")
 
         if not coordinates:
-            # Try HERE
             coordinates = get_coordinates_here(first_line, here_api_key)
             method_tried = "HERE"
             if coordinates:
                 found_with_here += 1
             else:
                 print(f"Coordinates not found using {method_tried} for: {first_line}")
+
         if not coordinates:
-            # Try CEP lookup
             print(f"Running CEP lookup for: {first_line}")
             cep = search_address_by_name(first_line)
             if cep:
@@ -375,23 +382,15 @@ if __name__ == "__main__":
                 if coordinates:
                     found_with_cep += 1
                     print(f"Found coordinates using CEP lookup for {first_line}: {coordinates}")
-                    institution_coordinates[first_line] = {
-                        "coordinates": coordinates,
-                        "info": extra_info_dict[key]
-                    }
-                    # Remove from out of boundary list if found
-                    if first_line in out_of_boundary_list:
-                        out_of_boundary_list.remove(first_line)
                 else:
                     print(f"Coordinates not found using {method_tried} for: {first_line}")
             else:
                 print(f"CEP not found for {first_line}")
 
-
         if coordinates:
             try:
                 lat, lon = float(coordinates[0]), float(coordinates[1])
-                if is_within_rs(lat, lon):
+                if is_within_rs(lat, lon) or is_within_bounding_box(lat, lon, bounding_box):
                     found_count += 1
                     print(f"Found: {first_line} -> Coordinates: {coordinates}")
                     institution_coordinates[first_line] = {
@@ -402,26 +401,6 @@ if __name__ == "__main__":
                     not_found_count += 1
                     print(f"Coordinates out of bounds for: {first_line}")
                     out_of_boundary_list.append(first_line)
-                    # Run CEP lookup
-                    print(f"Running CEP lookup for: {first_line}")
-                    cep = search_address_by_name(first_line)
-                    if cep:
-                        coordinates = get_coordinates_from_cep(cep)
-                        method_tried = "CEP Lookup"
-                        if coordinates:
-                            found_with_cep += 1
-                            print(f"Found coordinates using CEP lookup for {first_line}: {coordinates}")
-                            institution_coordinates[first_line] = {
-                                "coordinates": coordinates,
-                                "info": extra_info_dict[key]
-                            }
-                            # Remove from out of boundary list if found
-                            out_of_boundary_list.remove(first_line)
-                        else:
-                            print(f"Coordinates not found using {method_tried} for: {first_line}")
-                    else:
-                        print(f"CEP not found for {first_line}")
-
             except (IndexError, ValueError) as e:
                 print(f"Error processing coordinates for {first_line}: {e}")
                 not_found_count += 1
@@ -441,7 +420,7 @@ if __name__ == "__main__":
     print(f"Addresses not found: {not_found_count}")
     print(f"Elapsed time: {elapsed_time} seconds")
 
-    map_center = [-30.0, -53.0]  # Approximate center of Rio Grande do Sul
+    map_center = [-32.0, -57.0]  # Approximate center of Rio Grande do Sul
     folium_map = folium.Map(location=map_center, zoom_start=7)
 
     for institution, details in institution_coordinates.items():
@@ -526,7 +505,7 @@ if __name__ == "__main__":
     folium_map.get_root().html.add_child(folium.Element(button_html))
 
     # Save the map to an HTML file
-    map_filename = "/home/ec2-user/concurso2024/map_of_institutions.html"
+    map_filename = "map_of_institutions.html"
     folium_map.save(map_filename)
     print(f"Map saved as {map_filename}")
 
